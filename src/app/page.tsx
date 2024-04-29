@@ -2,14 +2,7 @@
 require("../assets/style/global.scss");
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
-import { Roboto } from "@next/font/google";
-
 import Carousel from "react-material-ui-carousel";
-
-const roboto = Roboto({
-  subsets: ["vietnamese"],
-  weight: ["400", "700"],
-});
 
 function Item(props: any): any {
   return (
@@ -35,11 +28,9 @@ export default function Home(props: any): any {
   // ];
   return (
     <>
-      <div className={(roboto.className)}>
-        <Header />
+      <div>
         <h2>Home body</h2>
         <h2></h2>
-        <Footer />
 
         {/* <Carousel>
           {items.map((item, i) => (

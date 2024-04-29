@@ -12,6 +12,10 @@
       display: flex;
       justify-content: left;
       align-items: center;
+      a{
+        display: inline-block;
+        height: 85px;
+      }
       .companyName {
         color: rgb(195, 0, 0);
         h1{

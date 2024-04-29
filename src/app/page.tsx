@@ -1,15 +1,16 @@
-"use client";
+// "use client";
+require("../assets/style/global.scss");
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
-import styleGlobal from "../style/global.module.scss";
+import { Roboto } from "@next/font/google";
 
 import Carousel from "react-material-ui-carousel";
-import { Paper, Button } from "@mui/material";
 
-import { Typography } from "@mui/material";
+const roboto = Roboto({
+  subsets: ["vietnamese"],
+  weight: ["400", "700"],
+});
 
-import Link from "next/link";
-//
 function Item(props: any): any {
   return (
     <Paper>
@@ -22,42 +23,29 @@ function Item(props: any): any {
 }
 
 export default function Home(props: any): any {
-  var items = [
-    {
-      name: "Random Name #1",
-      description: "Probably the most random thing you have ever seen!",
-    },
-    {
-      name: "Random Name #2",
-      description: "Hello World!",
-    },
-  ];
-
+  // var items = [
+  //   {
+  //     name: "Random Name #1",
+  //     description: "Probably the most random thing you have ever seen!",
+  //   },
+  //   {
+  //     name: "Random Name #2",
+  //     description: "Hello World!",
+  //   },
+  // ];
   return (
     <>
-      <div className={styleGlobal.global}>
+      <div className={(roboto.className)}>
         <Header />
-
-        <Typography variant="h1">test Material UI</Typography>
-
-        {/* thêm */}
-        <Link href="/diachi">Địa chỉ chính thức</Link>
-        <br />
-        <Link href="/diachi/diachi1">Địa chỉ chi nhánh 1</Link>
-        <br />
-        <Link href="/diachi/diachi2">Địa chỉ chi nhánh 2</Link>
-        <br />
-        <Link href="/gioithieu">Gioi thieu</Link>
-        {/* sửa */}
         <h2>Home body</h2>
+        <h2></h2>
+        <Footer />
 
-        <Carousel>
+        {/* <Carousel>
           {items.map((item, i) => (
             <Item key={i} item={item} />
           ))}
-        </Carousel>
-
-        <Footer />
+        </Carousel> */}
       </div>
     </>
   );

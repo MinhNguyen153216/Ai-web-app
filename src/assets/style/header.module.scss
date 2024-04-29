@@ -1,0 +1,53 @@
+.header {
+  // background-color: #eeeeee;
+  border-bottom: 2px solid rgb(211, 211, 211);
+  margin: 0;
+  margin-bottom: 10px;
+  .headerContainer {
+    max-height: 100px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .icon {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      .companyName {
+        color: rgb(195, 0, 0);
+        h1{
+          font-size: 30px;
+        }
+        h3{
+          font-size: 18px;
+        }
+      }
+    }
+    .menu {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      margin-right: 18px;
+      .menuPart {
+        margin: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+        border-radius: 5px;
+        p {
+          margin-left: 5px;
+          font-weight: 700;
+        }
+      }
+      .menuPart:hover {
+        color: #ffffff;
+        background-color: rgb(255, 0, 0);
+      }
+    }
+  }
+}

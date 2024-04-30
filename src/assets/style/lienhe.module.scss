@@ -1,0 +1,35 @@
+.contact {
+  display: flex;
+  height: 500px;
+  width: 1200px;
+  margin-top: 80px;
+  border: 1px solid #000;
+  padding: 0 30px;
+
+  .contact_inf {
+    padding-top: 20px;
+    padding-left: 20px;
+    flex-grow: 1;
+
+    p {
+        font-size: 15px;
+      margin: 10px 0;
+      color: #3176af;
+      font-style: oblique;
+      font-weight: bold;
+    }
+  }
+  .map {
+    flex-grow: 10;
+
+  }
+}
+.phoneIcon,
+.emailIcon,
+.addressIcon {
+  color: #3176af;
+  margin-right: 8px;
+  vertical-align: -6px;
+  //   position: relative;  dùng cách này cũng được
+  //   top: 5px;
+}

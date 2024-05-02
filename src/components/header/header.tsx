@@ -33,7 +33,7 @@ export default function Header() {
             {/* Trang chu */}
             <Link href="/">
               <div className={styleHeader.menuPart}>
-                <HomeRoundedIcon sx={{ fontSize: 22 }} />
+                <HomeRoundedIcon sx={{ fontSize: 22 }}/>
                 <p>Trang Chủ</p>
               </div>
             </Link>
@@ -63,6 +63,7 @@ export default function Header() {
             </Link>
           </div>
         </div>
+
       </header>
     </>
   );

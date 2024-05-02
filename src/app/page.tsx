@@ -1,19 +1,18 @@
 // "use client";
-require("../assets/style/global.scss");
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Carousel from "react-material-ui-carousel";
 
-function Item(props: any): any {
-  return (
-    <Paper>
-      <h2>{props.item.name}</h2>
-      <p>{props.item.description}</p>
+// function Item(props: any): any {
+//   return (
+//     <Paper>
+//       <h2>{props.item.name}</h2>
+//       <p>{props.item.description}</p>
 
-      <Button className="CheckButton">Check it out!</Button>
-    </Paper>
-  );
-}
+//       <Button className="CheckButton">Check it out!</Button>
+//     </Paper>
+//   );
+// }
 
 export default function Home(props: any): any {
   // var items = [

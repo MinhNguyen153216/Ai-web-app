@@ -1,3 +1,5 @@
+require("../assets/style/global.scss");
+
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";

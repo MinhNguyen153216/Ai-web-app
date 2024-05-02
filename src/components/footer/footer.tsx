@@ -1,5 +1,5 @@
 import styleFooter from "../../assets/style/footer.module.scss";
-import CopyrightRoundedIcon from '@mui/icons-material/CopyrightRounded';
+import CopyrightRoundedIcon from "@mui/icons-material/CopyrightRounded";
 import Link from "next/link";
 
 export default function Footer() {
@@ -10,9 +10,11 @@ export default function Footer() {
         <section className={styleFooter.mainFooter}>
           {/* Thông tin địa chỉ */}
           <div className={styleFooter.footerAddress}>
+            {/* 1 */}
             <div className={styleFooter.footerTitle}>
               <h4>THÔNG TIN LIÊN HỆ</h4>
             </div>
+            {/* 2 */}
             <div className={styleFooter.addressDetail}>
               <p>
                 <span style={{ fontWeight: "bold" }}>Địa chỉ:</span> ấp Suối
@@ -26,6 +28,8 @@ export default function Footer() {
                 phuocnhankaolin@gmail.com
               </p>
             </div>
+            {/* 3 */}
+            <div>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG: Ông Trần Phương Huy</div>
           </div>
           {/* Liên kết nhanh */}
           <div className={styleFooter.footerLink}>
@@ -60,8 +64,14 @@ export default function Footer() {
 
         {/* Footer phụ */}
         <section className={styleFooter.footerDesign}>
-          <p className={styleFooter.leftDesign}><CopyrightRoundedIcon className={styleFooter.leftIcon}/> 2023 Công ty Phước Nhân . All rights reserved </p>
-          <p className={styleFooter.rightDesign}> Web Design & Support by <span>Mattie The Koala</span></p>
+          <p className={styleFooter.leftDesign}>
+            <CopyrightRoundedIcon className={styleFooter.leftIcon} /> 2023 Công
+            ty Phước Nhân . All rights reserved{" "}
+          </p>
+          <p className={styleFooter.rightDesign}>
+            {" "}
+            Web Design & Support by <span>Mattie The Koala</span>
+          </p>
         </section>
       </div>
     </>

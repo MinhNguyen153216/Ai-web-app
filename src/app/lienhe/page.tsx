@@ -127,29 +127,42 @@ export default function LienHe() {
   return (
     <>
       <div className={`container ${styleLienHe.contact}`}>
-
         {/* Tiêu đề */}
-        <h1 className={styleLienHe.contactTitle}>
-          <a href="#">LIÊN HỆ</a>
-        </h1>
+        <div>
+          <h1 className={styleLienHe.contactTitle}>
+            {/* remove a tag */}
+            <a href="#">LIÊN HỆ</a>
+          </h1>
+        </div>
 
         {/* Thông tin liên hệ */}
         <div className={styleLienHe.contactDetail}>
-          <div className={styleLienHe.contact_inf}>
+          <div className={styleLienHe.contactInf}>
             <h5>DOANH NGHIỆP TƯ NHÂN</h5>
             <h1>KHOÁNG SẢN PHƯỚC NHÂN </h1>
-            <p className={styleLienHe.address}>
-              <LocationOnRoundedIcon className={styleLienHe.addressIcon} />
-              ấp Suối Sâu, xã Đất Cuốc, Huyện Bắc Tân Uyên, Bình Dương
-            </p>
-            <p className={styleLienHe.phone}>
+
+            {/* address */}
+            <div>
+              <p className={styleLienHe.address}>
+                <LocationOnRoundedIcon className={styleLienHe.addressIcon} />
+                ấp Suối Sâu, xã Đất Cuốc, Huyện Bắc Tân Uyên, Bình Dương
+              </p>
+            </div>
+
+            {/* phone */}
+            <div>
               <LocalPhoneRoundedIcon className={styleLienHe.phoneIcon} />
-              0908310833
-            </p>
-            <p className={styleLienHe.email}>
+              <a href="tel:0902945073">0902945073</a>
+            </div>
+
+            {/* email */}
+            <div>
               <EmailRoundedIcon className={styleLienHe.emailIcon} />
-              phuocnhankaolin@gmail.com
-            </p>
+              {/* tag <a href="mailto:someone@example.com">Send email</a></p> */}
+              <p className={styleLienHe.email}>phuocnhankaolin@gmail.com</p>
+            </div>
+
+            {/* schedule */}
             <p className={styleLienHe.schedule}>
               <CalendarMonthRoundedIcon className={styleLienHe.scheduleIcon} />
               Thời gian làm việc: 6:00 - 18:00 | Thứ Hai - Thứ Bảy
@@ -158,6 +171,7 @@ export default function LienHe() {
 
           {/* Map */}
           <div className={styleLienHe.map}>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31308.167232002117!2d106.5746432!3d11.22304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174ca9ef230deed%3A0x2586c48655cd1ba!2zQ2jhu6MgTG9uZyBOZ3V5w6pu!5e0!3m2!1sen!2s!4v1714674864358!5m2!1sen!2s"></iframe>
             <p>map</p>
           </div>
         </div>

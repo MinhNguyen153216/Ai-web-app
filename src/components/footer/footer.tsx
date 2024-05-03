@@ -6,31 +6,47 @@ export default function Footer() {
   return (
     <>
       <div className={`container ${styleFooter.footerDetail}`}>
+
         {/* Footer Chính */}
-        <section className={styleFooter.mainFooter}>
+        <section className={styleFooter.Footer}>
+
           {/* Thông tin địa chỉ */}
-          <div className={styleFooter.footerAddress}>
-            {/* 1 */}
+          <div
+            className={styleFooter.footerAddress}
+          >
             <div className={styleFooter.footerTitle}>
               <h4>THÔNG TIN LIÊN HỆ</h4>
             </div>
-            {/* 2 */}
+
+            {/* Thông tin liên hệ chi tiết */}
             <div className={styleFooter.addressDetail}>
+              {/* Địa Chỉ */}
               <p>
                 <span style={{ fontWeight: "bold" }}>Địa chỉ:</span> ấp Suối
                 Sâu, xã Đất Cuốc, Huyện Bắc Tân Uyên, Bình Dương
               </p>
+
+              {/* SDT */}
               <p>
-                <span style={{ fontWeight: "bold" }}>Hotline:</span> 0908310833
+                <span style={{ fontWeight: "bold" }}>Hotline:</span>{" "}
+                <a href="tel:0908310833">0908310833 </a>
               </p>
+
+              {/* Email */}
               <p>
                 <span style={{ fontWeight: "bold" }}>Email: </span>
-                phuocnhankaolin@gmail.com
+                <a
+                  itemID={styleFooter.mail}
+                  href="mailto:phuocnhankaolin@gmail.com"
+                >
+                  phuocnhankaolin@gmail.com
+                </a>
               </p>
             </div>
-            {/* 3 */}
-            <div>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG: Ông Trần Phương Huy</div>
+
+            {/* <div>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG: Ông Trần Phương Huy</div> */}
           </div>
+
           {/* Liên kết nhanh */}
           <div className={styleFooter.footerLink}>
             <div className={styleFooter.footerTitle}>
@@ -57,8 +73,8 @@ export default function Footer() {
           </div>
 
           {/* Map */}
-          <div className={styleFooter.footerMap}>
-            link thêm 1 cái bản đồ ở đây nè
+          <div className={`${styleFooter.footerMap} ${styleFooter.grow}`}>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31308.167232002117!2d106.5746432!3d11.22304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174ca9ef230deed%3A0x2586c48655cd1ba!2zQ2jhu6MgTG9uZyBOZ3V5w6pu!5e0!3m2!1sen!2s!4v1714674864358!5m2!1sen!2s"></iframe>
           </div>
         </section>
 
@@ -70,7 +86,12 @@ export default function Footer() {
           </p>
           <p className={styleFooter.rightDesign}>
             {" "}
-            Web Design & Support by <span>Mattie The Koala</span>
+            Web Design & Support by{" "}
+            <span>
+              <Link href="https://github.com/MinhNguyen153216">
+                Mattie The Koala
+              </Link>
+            </span>
           </p>
         </section>
       </div>

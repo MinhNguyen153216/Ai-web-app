@@ -1,20 +1,22 @@
 .contact {
-  height: 500px;
+  height: 600px;
   width: 1200px;
-  margin-top: 80px;
+  margin-top: 70px;
   padding: 0 30px;
   padding: -20px;
 
   .contactTitle {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     letter-spacing: 3.5px;
-    a {
+    h1 {
       position: relative;
       color: black;
       padding: 0 10px;
+      cursor: pointer;
+      display: inline-block;
     }
-    a:after {
+    h1:after {
       content: "";
       position: absolute;
       background-color: rgb(195, 0, 0);
@@ -26,23 +28,30 @@
   }
   .contactDetail {
     display: flex;
-
+    justify-content: space-between;
+    padding: 0 15px;
     .contactInf {
-      // padding-top: 20px;
-      // padding-left: 20px;
-      flex-grow: 1;
       h5,
       h1 {
         color: rgb(195, 0, 0);
         cursor: pointer;
       }
-      p {
-        font-size: 15px;
-        margin: 10px 0;
+      .address {
+        margin-top: 15px;
+      }
+      p,
+      a {
+        font-size: 16px;
+        line-height: 2.2;
         color: black;
         font-style: oblique;
         font-weight: bold;
         cursor: pointer;
+      }
+      .phone:hover, .email:hover{
+        a{
+          color: red;
+        }
       }
       .phoneIcon,
       .emailIcon,
@@ -56,12 +65,10 @@
       }
     }
     .map {
-      flex-grow: 10;
-      // padding-top: 20px;
-      // padding-right: 20px;
+      padding-right: 20px;
       iframe {
-        width: 100%;
-        height: 100%;
+        width: 650px;
+        height: 450px;
       }
     }
   }

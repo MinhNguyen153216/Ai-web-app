@@ -26,9 +26,12 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding: 0 25px 0 15px;
+    gap: 15px;
 
     .contactDetail {
       width: 40%;
+      // padding-left: 18px;
       .contactInf {
         h5,
         h1 {
@@ -65,7 +68,9 @@
     }
 
     .map {
-      width: 60%;
+      width: 59%;
+      
+      // padding: 0 35px;
       iframe {
         width: 100%;
         height: 450px;

@@ -27,8 +27,7 @@ export default function Home(props: any): any {
   return (
     <>
       <div>
-        <h2>Home body</h2>
-        <h2></h2>
+        
 
         {/* <Carousel>
           {items.map((item, i) => (

@@ -7,6 +7,7 @@ export default function Footer() {
     <>
       <div className={styleFooter.footer}>
         <hr className={styleFooter.end}></hr>
+        
         <div className={`globalContainer ${styleFooter.footerContainer}`}>
           {/* Footer Chính */}
           <section className={styleFooter.Footer}>

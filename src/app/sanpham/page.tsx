@@ -1,7 +1,9 @@
+import Product from "@/components/product/product";
+
 export default function SanPham() {
-    return (
-      <>
-        <h1>Sản Phẩm</h1>
-      </>
-    );
-  }
+  return (
+    <>
+      <Product />
+    </>
+  );
+}

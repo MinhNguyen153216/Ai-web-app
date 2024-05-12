@@ -4,19 +4,23 @@
     .productMenu {
       display: flex;
       justify-content: flex-end;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
+      margin-top: 10px;
       .menuDetail {
+        // border: 1px solid #000;
         text-align: center;
         margin: 0 10px;
-        cursor: pointer;
-        a {
+        p {
           color: black;
           text-decoration: none;
           font-size: 18px;
+          cursor: pointer;
         }
-        a:hover {
+        p:hover {
+          cursor: pointer;
           color: red;
           border-bottom: 1px solid red;
+          margin-bottom: -1px; 
         }
       }
       .menuDetail:nth-child(1) {
@@ -31,28 +35,37 @@
       .productItem {
         width: 25%;
         margin: 20px 0px;
-        border-radius: 20px;
+        // border-radius: 20px;
         // border: 1px solid #000;
+        height: 350px;
+      
+        
         .productImg {
           max-height: 250px;
-
           img {
-            width: 95%;
+            width: 94.5%;
             position: relative;
             left: 50%;
             transform: translateX(-50%);
             top: 7px;
             height: 250px;
-            border-radius: 20px 20px 0px 0px;
+            border-radius: 15px 15px 0px 0px ;
             border-bottom: none;
+            border: 1px solid #ADB3B6;
           }
+          // :hover{
+          //   border: 2px solid #000;
+          //   border-radius: 0;
+          // }
         }
+   
 
         .detailBorder {
-          border: 1px solid #000;
-          margin: 0 auto;
-          width: 94.5%;
-          border-radius: 0px 0px 20px 20px;
+           border: 1px solid #ADB3B6;
+           margin: 0 auto;
+           width: 94.5%;
+           border-radius: 0px 0px 15px 15px;
+          
           .productName {
             text-align: center;
             padding-top: 20px;
@@ -63,6 +76,23 @@
             padding-bottom: 10px;
           }
         }
+      }
+      .productItem:hover{
+        transform: scale(1.01);
+        .detailBorder{
+          border-radius: 0;
+          border: 2px solid #535963;
+          
+          
+        }
+        .productImg >img{
+          border-radius: 0;
+          border: 2px solid #535963;
+          border-bottom: none;
+          
+        }
+
+        
       }
     }
   }

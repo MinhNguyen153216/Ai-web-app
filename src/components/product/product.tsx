@@ -5,39 +5,39 @@ import Image from "next/image";
 
 const itemsTotal = [
   {
-    imgURL: "/img/anhmayvang.png",
+    imgURL: "/img/botthocaolanh01.png",
     imgALT: "alt of the img",
-    itemName: "SẢN PHẨM 1",
+    itemName: "BỘT CAO LANH THÔ 1",
     itemPrice: "LIÊN HỆ",
   },
   {
-    imgURL: "/img/anhmayvang.png",
+    imgURL: "/img/botthocaolanh02.png",
     imgALT: "alt of the img",
-    itemName: "SẢN PHẨM 1",
+    itemName: "BỘT CAO LANH THÔ 2",
     itemPrice: "LIÊN HỆ",
   },
   {
-    imgURL: "/img/anhmayvang.png",
+    imgURL: "/img/botcaolanhloc.png",
     imgALT: "alt of the img",
-    itemName: "SẢN PHẨM 1",
+    itemName: "BỘT CAO LANH LỌC",
     itemPrice: "LIÊN HỆ",
   },
   {
-    imgURL: "/img/anhmayvang.png",
+    imgURL: "/img/botcaolanhsieumintrang.png",
     imgALT: "alt of the img",
-    itemName: "SẢN PHẨM 1",
+    itemName: "BỘT CAO LANH SIÊU MỊN",
     itemPrice: "LIÊN HỆ",
   },
   {
-    imgURL: "/img/anhmayvang.png",
+    imgURL: "/img/botcaolanhsmvang.png",
     imgALT: "alt of the img",
-    itemName: "SẢN PHẨM 1",
+    itemName: "BỘT CAO LANH SM VÀNG",
     itemPrice: "LIÊN HỆ",
   },
   {
-    imgURL: "/img/anhmayvang.png",
+    imgURL: "/img/vang04.png",
     imgALT: "alt of the img",
-    itemName: "SẢN PHẨM 1",
+    itemName: "VÀNG 04",
     itemPrice: "LIÊN HỆ",
   },
 ];
@@ -45,9 +45,9 @@ const itemsTotal = [
 // bot sieu min
 const items1 = [
   {
-    imgURL: "/img/anhmayvang.png",
+    imgURL: "/img/botcaolanhsieumintrang.png",
     imgALT: "alt of the img",
-    itemName: "SẢN PHẨM 1",
+    itemName: "BỘT CAO LANH SIÊU MỊN",
     itemPrice: "LIÊN HỆ",
   },
 ];
@@ -55,19 +55,32 @@ const items1 = [
 // bot tho
 const items2 = [
   {
-    imgURL: "/img/anhmayvang.png",
+    imgURL: "/img/botthocaolanh01.png",
     imgALT: "alt of the img",
-    itemName: "SẢN PHẨM 1",
+    itemName: "BỘT CAO LANH THÔ 1",
+    itemPrice: "LIÊN HỆ",
+  },
+  {
+    imgURL: "/img/botthocaolanh02.png",
+    imgALT: "alt of the img",
+    itemName: "BỘT CAO LANH THÔ 2",
     itemPrice: "LIÊN HỆ",
   },
 ];
 
+
 // bot vang
 const items3 = [
   {
-    imgURL: "/img/anhmayvang.png",
+    imgURL: "/img/botcaolanhsmvang.png",
     imgALT: "alt of the img",
-    itemName: "SẢN PHẨM 1",
+    itemName: "BỘT CAO LANH SM VÀNG",
+    itemPrice: "LIÊN HỆ",
+  },
+  {
+    imgURL: "/img/vang04.png",
+    imgALT: "alt of the img",
+    itemName: "VÀNG 04",
     itemPrice: "LIÊN HỆ",
   },
 ];
@@ -75,9 +88,9 @@ const items3 = [
 // dat loc
 const items4 = [
   {
-    imgURL: "/img/anhmayvang.png",
+    imgURL: "/img/botcaolanhloc.png",
     imgALT: "alt of the img",
-    itemName: "SẢN PHẨM 1",
+    itemName: "BỘT CAO LANH LỌC",
     itemPrice: "LIÊN HỆ",
   },
 ];

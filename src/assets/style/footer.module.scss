@@ -12,12 +12,10 @@
     .Footer {
       display: flex;
       justify-content: space-between;
-      .footerAddress,
-      .footerLink,
-      .footerMap {
+      margin-top: 20px;
+      .footerItem {
         padding: 5px 15px;
-        width: 300px;
-        height: 200px;
+
         cursor: pointer;
         p,
         a {
@@ -30,6 +28,14 @@
         .footerTitle {
           margin-bottom: 15px;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
+          @media screen and (max-width: $screenMedium) {
+            text-align: center;
+            font-size: 20px;
+          }
+          @media screen and (max-width: $screenSmall) {
+            text-align: center;
+            font-size: 12px;
+          }
         }
         .fastlinkDetail {
           li {
@@ -55,25 +61,63 @@
             }
           }
         }
-      }
-      .grow {
-        width: 500px;
-        margin-right: 30px;
-        iframe {
-          width: 480px;
-          height: 180px;
+        @media screen and (max-width: $screenMedium) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: $screenSmall) {
+          font-size: 11px;
         }
       }
-      // .padding {
-      //   padding-top: 45px;
-      // }
+      .footerAddress {
+        width: 25%;
+        @media screen and (max-width: $screenMedium) {
+          order: 3;
+          width: 50%;
+          padding-left: 20px;
+        }
+      }
+      .footerLink {
+        width: 25%;
+        @media screen and (max-width: $screenMedium) {
+          order: 2;
+          width: 50%;
+          text-align: center;
+        }
+      }
+      .footerMap {
+        width: 40%;
+        @media screen and (max-width: $screenMedium) {
+          order: 1;
+          width: 100%;
+        }
+      }
+      .grow {
+        margin-right: 20px;
+        iframe {
+          width: 100%;
+          height: 180px;
+          border: none !important;
+          @media screen and (max-width: $screenMedium) {
+            height: 350px;
+          }
+        }
+        @media screen and (max-width: $screenMedium) {
+          margin-right: 0px;
+        }
+      }
+      @media screen and (max-width: $screenMedium) {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        // justify-content: center;
+        padding-bottom: 15px;
+        margin-top: 10px;
+      }
     }
 
     //   Footer phụ
     .footerDesign {
-      max-width: 1150px;
-      // margin: 0 auto;
-      margin-left: 15px;
+      max-width: 1200px;
+      margin: 0 auto;
       height: 40px;
       display: flex;
       justify-content: space-between;
@@ -82,27 +126,50 @@
       // padding-right: 20px;
 
       p.leftDesign {
+        span {
+          font-weight: bold;
+          @media screen and (max-width: $screenSmall) {
+            display: inline-block;
+          }
+        }
         .leftIcon {
           vertical-align: -6px;
+         
+        }
+        @media screen and (max-width: $screenSmall) {
+          padding-right: 30px;
         }
       }
       p.rightDesign {
+        margin-top: 8px;
+        line-height: 16px;
+        span {
+          font-weight: bold;
+          @media screen and (max-width: $screenSmall) {
+            display: inline-block;
+          }
+        }
         a {
           color: black;
         }
         a:hover {
           color: red;
         }
-        span {
-          font-weight: bold;
+        @media screen and (max-width: $screenSmall) {
+          padding-right: 20px;
         }
+      }
+
+      @media screen and (max-width: $screenSmall) {
+        font-size: 11px;
+        text-align: center;
       }
     }
   }
   @media screen and (max-width: $screenMedium) {
-    display: none;
+    display: block;
   }
   @media screen and (max-width: $screenSmall) {
-    display: none;
+    display: block;
   }
 }

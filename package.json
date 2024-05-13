@@ -16,7 +16,6 @@
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "@mui/material-nextjs": "^5.15.11",
-    "@mui/styles": "^5.15.15",
     "@next/font": "^14.2.3",
     "@react-google-maps/api": "^2.19.3",
     "next": "14.2.3",

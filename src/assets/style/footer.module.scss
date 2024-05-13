@@ -1,3 +1,4 @@
+@import "./mediaScreen.scss";
 .footer {
   margin-top: 10px;
   .end {
@@ -97,5 +98,11 @@
         }
       }
     }
+  }
+  @media screen and (max-width: $screenMedium) {
+    display: none;
+  }
+  @media screen and (max-width: $screenSmall) {
+    display: none;
   }
 }

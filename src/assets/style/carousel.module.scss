@@ -1,16 +1,14 @@
-.imgCarousel{
-    width: 100% !important;
-    height: 300px; 
-    border-radius: 8px;
-    z-index: 0;
-    
+@import "./mediaScreen.scss";
 
-
+.imgCarousel {
+  border-radius: 8px;
+  @media screen and (max-width: $screenMedium) {
+    border-radius: 0;
+  }
+  @media screen and (max-width: $screenSmall) {
+    border-radius: 0;
+  }
 }
-.Paper{
-    box-shadow: none !important;
-
-
-
-
+.Paper {
+  box-shadow: none !important;
 }

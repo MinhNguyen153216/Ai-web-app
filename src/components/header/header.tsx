@@ -5,11 +5,13 @@ import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import InfoIcon from "@mui/icons-material/Info";
 import CallIcon from "@mui/icons-material/Call";
+import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function Header() {
   const [choosePage, setChooseState] = useState(1);
+  const [showMenuSmall, setMenuSmall] = useState(false);
 
   function handleClickPage(num: number) {
     setChooseState((choosePage) => num);
@@ -19,7 +21,93 @@ export default function Header() {
     <>
       <header className={styleHeader.header}>
         <div className={styleHeader.headerContainer}>
-          {/* icon */}
+          {/*---small menu---*/}
+          {/* small menu icon*/}
+          <div
+            className={styleHeader.smallMenu}
+            onClick={() => setMenuSmall((prevDisplay) => !prevDisplay)}
+          >
+            <MenuIcon sx={{ fontSize: 40 }} />
+          </div>
+          {/* small list menu*/}
+          <div
+            className={styleHeader.listMenuSmall}
+            style={{ display: showMenuSmall ? "block" : "none" }}
+          >
+            {/* Trang chu */}
+            <Link href="/">
+              <div
+                className={
+                  styleHeader.menuPart +
+                  " " +
+                  `${choosePage === 1 ? styleHeader.clickedPage : ""}`
+                }
+                onClick={() => {
+                  handleClickPage(1);
+                  setMenuSmall((prevDisplay) => !prevDisplay);
+                }}
+              >
+                <HomeRoundedIcon sx={{ fontSize: 22 }} />
+                <p>Trang Chủ</p>
+              </div>
+            </Link>
+
+            {/* San Pham */}
+            <Link href="/sanpham">
+              <div
+                className={
+                  styleHeader.menuPart +
+                  " " +
+                  `${choosePage === 2 ? styleHeader.clickedPage : ""}`
+                }
+                onClick={() => {
+                  handleClickPage(2);
+                  setMenuSmall((prevDisplay) => !prevDisplay);
+                }}
+              >
+                <ShoppingCartIcon sx={{ fontSize: 22 }} />
+                <p>Sản Phẩm</p>
+              </div>
+            </Link>
+
+            {/* Gioi Thieu */}
+            <Link href="/gioithieu">
+              <div
+                className={
+                  styleHeader.menuPart +
+                  " " +
+                  `${choosePage === 3 ? styleHeader.clickedPage : ""}`
+                }
+                onClick={() => {
+                  handleClickPage(3);
+                  setMenuSmall((prevDisplay) => !prevDisplay);
+                }}
+              >
+                <InfoIcon sx={{ fontSize: 22 }} />
+                <p>Giới Thiệu</p>
+              </div>
+            </Link>
+
+            {/* Lien He */}
+            <Link href="/lienhe">
+              <div
+                className={
+                  styleHeader.menuPart +
+                  " " +
+                  `${choosePage === 4 ? styleHeader.clickedPage : ""}`
+                }
+                onClick={() => {
+                  handleClickPage(4);
+                  setMenuSmall((prevDisplay) => !prevDisplay);
+                }}
+              >
+                <CallIcon sx={{ fontSize: 22 }} />
+                <p>Liên Hệ</p>
+              </div>
+            </Link>
+          </div>
+
+          {/*---company icon---*/}
           <div className={styleHeader.icon}>
             <Link href="/">
               <Image
@@ -35,7 +123,7 @@ export default function Header() {
             </div>
           </div>
 
-          {/* menu */}
+          {/*---big menu---*/}
           <div className={styleHeader.menu}>
             {/* Trang chu */}
             <Link href="/">
@@ -69,12 +157,14 @@ export default function Header() {
 
             {/* Gioi Thieu */}
             <Link href="/gioithieu">
-              <div className={
+              <div
+                className={
                   styleHeader.menuPart +
                   " " +
                   `${choosePage === 3 ? styleHeader.clickedPage : ""}`
                 }
-                onClick={() => handleClickPage(3)}>
+                onClick={() => handleClickPage(3)}
+              >
                 <InfoIcon sx={{ fontSize: 22 }} />
                 <p>Giới Thiệu</p>
               </div>
@@ -82,12 +172,14 @@ export default function Header() {
 
             {/* Lien He */}
             <Link href="/lienhe">
-              <div className={
+              <div
+                className={
                   styleHeader.menuPart +
                   " " +
                   `${choosePage === 4 ? styleHeader.clickedPage : ""}`
                 }
-                onClick={() => handleClickPage(4)}>
+                onClick={() => handleClickPage(4)}
+              >
                 <CallIcon sx={{ fontSize: 22 }} />
                 <p>Liên Hệ</p>
               </div>

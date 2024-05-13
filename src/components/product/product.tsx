@@ -68,7 +68,6 @@ const items2 = [
   },
 ];
 
-
 // bot vang
 const items3 = [
   {
@@ -119,7 +118,7 @@ function ProductItem(props: any): any {
 }
 
 export default function Product() {
-  const [chooseType, setChooseType] = useState(1);
+  const [chooseType, setChooseType] = useState(0);
 
   function handleClickProductType(num: number) {
     setChooseType((chooseType) => num);

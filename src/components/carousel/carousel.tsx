@@ -11,8 +11,9 @@ function Item(props: any): any {
       <Image
         className={styleCarousel.imgCarousel}
         src={props.item.test}
-        width={5000}
-        height={5050}
+        priority
+        width={9999}
+        height={9999}
         alt="Logo"
       />
     </Paper>

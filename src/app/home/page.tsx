@@ -13,6 +13,7 @@ export default function HomePage() {
               <ComponentCarousel></ComponentCarousel>
             </div>
           </div>
+          
 
           <div className={`globalContainer`}>
             <div className={styleHomePage.Product}>

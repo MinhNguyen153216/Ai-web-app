@@ -40,6 +40,8 @@ export default function Header() {
                 className={
                   styleHeader.menuPart +
                   " " +
+                  styleHeader.animationMenu1 +
+                  " " +
                   `${choosePage === 1 ? styleHeader.clickedPage : ""}`
                 }
                 onClick={() => {
@@ -57,6 +59,8 @@ export default function Header() {
               <div
                 className={
                   styleHeader.menuPart +
+                  " " +
+                  styleHeader.animationMenu2 +
                   " " +
                   `${choosePage === 2 ? styleHeader.clickedPage : ""}`
                 }
@@ -76,6 +80,8 @@ export default function Header() {
                 className={
                   styleHeader.menuPart +
                   " " +
+                  styleHeader.animationMenu3 +
+                  " " +
                   `${choosePage === 3 ? styleHeader.clickedPage : ""}`
                 }
                 onClick={() => {
@@ -93,6 +99,8 @@ export default function Header() {
               <div
                 className={
                   styleHeader.menuPart +
+                  " " +
+                  styleHeader.animationMenu4 +
                   " " +
                   `${choosePage === 4 ? styleHeader.clickedPage : ""}`
                 }

@@ -1,0 +1,74 @@
+@import "./mediaScreen.scss";
+.introduce {
+  margin-top: 35px;
+  height: 610px;
+  // border: 1px solid #000;
+  .introduceTitle {
+    text-align: center;
+    margin-bottom: 25px;
+    h1 {
+      position: relative;
+      color: black;
+      padding: 0 10px;
+      cursor: pointer;
+      display: inline-block;
+    }
+    h1:after {
+      content: "";
+      position: absolute;
+      background-color: rgb(195, 0, 0);
+      height: 3px;
+      width: 100%;
+      left: 0;
+      bottom: -5px;
+    }
+  }
+  .introduceContainer {
+    margin-top: 50px;
+    .content p {
+      width: 80%;
+      //   border: 1px solid #000;
+      margin: 10px auto;
+      font-size: 20px;
+      line-height: 1.6;
+      color: #404040;
+
+      span {
+        font-weight: bold;
+      }
+    }
+    // .companyInformation{
+    //     display: flex;
+    //     border: 1px solid #000;
+    //     margin-top: 50px;
+    //     justify-content: center;
+    //     .companyLogo{
+    //         border: 5px solid #000;
+    //     }
+    //     .companyInfo{
+    //         border: 5px solid #000;
+    //         align-self: center;
+    //         margin-left: 50px;
+    //         .infoTitle{
+    //             text-align: center;
+    //         }
+    //         .infoContent{
+    //             line-height: 1.8;
+    //             margin-top: 15px;
+    //             font-size: 17px;
+    //             span{
+    //                 font-weight: bold;
+    //             }
+    //         }
+    //     }
+    // }
+  }
+  @media screen and (max-width: $screenMedium) {
+    height: 100%;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: $screenSmall) {
+    height: 100%;
+   
+  }
+}

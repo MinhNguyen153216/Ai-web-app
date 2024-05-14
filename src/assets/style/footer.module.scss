@@ -61,6 +61,9 @@
               color: orangered;
             }
           }
+          @media screen and (max-width: $screenExtraSmall) {
+            line-height: 3;
+          }
         }
         @media screen and (max-width: $screenMedium) {
           font-size: 20px;
@@ -76,6 +79,12 @@
           width: 50%;
           padding-left: 20px;
         }
+        // .addressDetail{
+        //   @media screen and (max-width: $screenSmall) {
+        //     margin-top: 25px;
+            
+        //   }
+        // }
       }
       .footerLink {
         width: 25%;
@@ -84,6 +93,7 @@
           width: 50%;
           text-align: center;
         }
+        
       }
       .footerMap {
         width: 40%;
@@ -135,7 +145,6 @@
         }
         .leftIcon {
           vertical-align: -6px;
-         
         }
         @media screen and (max-width: $screenSmall) {
           padding-right: 30px;

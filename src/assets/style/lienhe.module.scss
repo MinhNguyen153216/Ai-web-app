@@ -1,9 +1,9 @@
 .contact {
   margin-top: 25px;
-
+  height: 620px;
   .contactTitle {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 55px;
     h1 {
       position: relative;
       color: black;
@@ -28,6 +28,7 @@
     align-items: flex-start;
     padding: 0 25px 0 15px;
     gap: 15px;
+    // border: 1px solid #000;
 
     .contactDetail {
       width: 40%;
@@ -72,8 +73,9 @@
       
       // padding: 0 35px;
       iframe {
-        width: 100%;
+        width: 95%;
         height: 450px;
+        margin-left: 25px;
       }
     }
   }

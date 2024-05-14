@@ -7,12 +7,14 @@ export default function Footer() {
     <>
       <div className={styleFooter.footer}>
         <hr className={styleFooter.end}></hr>
-        
+
         <div className={`globalContainer ${styleFooter.footerContainer}`}>
           {/* Footer Chính */}
           <section className={styleFooter.Footer}>
             {/* Thông tin địa chỉ */}
-            <div className={`${styleFooter.footerItem} ${styleFooter.footerAddress}`}>
+            <div
+              className={`${styleFooter.footerItem} ${styleFooter.footerAddress}`}
+            >
               <div className={styleFooter.footerTitle}>
                 <h4>THÔNG TIN LIÊN HỆ</h4>
               </div>
@@ -47,7 +49,9 @@ export default function Footer() {
             </div>
 
             {/* Liên kết nhanh */}
-            <div className={`${styleFooter.footerItem} ${styleFooter.footerLink}`}>
+            <div
+              className={`${styleFooter.footerItem} ${styleFooter.footerLink}`}
+            >
               <div className={styleFooter.footerTitle}>
                 <h4>LIÊN KẾT NHANH</h4>
               </div>
@@ -72,7 +76,9 @@ export default function Footer() {
             </div>
 
             {/* Map */}
-            <div className={`${styleFooter.footerItem} ${styleFooter.grow} ${styleFooter.footerMap}`}>
+            <div
+              className={`${styleFooter.footerItem} ${styleFooter.grow} ${styleFooter.footerMap}`}
+            >
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31308.167232002117!2d106.5746432!3d11.22304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174ca9ef230deed%3A0x2586c48655cd1ba!2zQ2jhu6MgTG9uZyBOZ3V5w6pu!5e0!3m2!1sen!2s!4v1714674864358!5m2!1sen!2s"></iframe>
             </div>
           </section>
@@ -84,7 +90,6 @@ export default function Footer() {
               Công ty Phước Nhân . <span>All rights reserved</span>
             </p>
             <p className={styleFooter.rightDesign}>
-              
               Web Design & Support by &nbsp;
               <span>
                 <Link href="https://github.com/MinhNguyen153216">

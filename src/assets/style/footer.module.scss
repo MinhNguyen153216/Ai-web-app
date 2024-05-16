@@ -82,7 +82,7 @@
         // .addressDetail{
         //   @media screen and (max-width: $screenSmall) {
         //     margin-top: 25px;
-            
+
         //   }
         // }
       }
@@ -93,7 +93,6 @@
           width: 50%;
           text-align: center;
         }
-        
       }
       .footerMap {
         width: 40%;
@@ -151,7 +150,7 @@
         }
       }
       p.rightDesign {
-        margin-top: 8px;
+        // margin-top: 8px;
         line-height: 16px;
         span {
           font-weight: bold;
@@ -168,11 +167,15 @@
         @media screen and (max-width: $screenSmall) {
           padding-right: 20px;
         }
+        
       }
 
       @media screen and (max-width: $screenSmall) {
         font-size: 11px;
         text-align: center;
+      }
+      @media screen and (max-width: $screenMedium) {
+        margin: 0 20px;
       }
     }
   }

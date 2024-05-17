@@ -1,5 +1,6 @@
 @import "./mediaScreen.scss";
 .Product {
+  height: 900px;
   .productDetail {
     padding-left: 8px;
     .productMenu {
@@ -20,7 +21,8 @@
             font-size: 22px;
           }
           @media screen and (max-width: $screenSmall) {
-            font-size: 20px;
+            font-size: 15px;
+            width: 70px;
           }
         }
         p:hover {
@@ -30,39 +32,45 @@
           margin-bottom: -1px;
         }
         @media screen and (max-width: $screenSmall) {
-          margin-top: 20px;
+          margin: 20px 0 0 0 ;
         }
       }
       .menuDetail:nth-child(1) {
         margin-right: 70px;
-        p{
+        p {
           @media screen and (max-width: $screenSmall) {
-            font-size: 28px;
+            font-size: 18px;
+            width: 90px;
           }
         }
         @media screen and (max-width: $screenSmall) {
-          margin-right: 10px;
+          margin-right: 20px;
           font-weight: bold;
         }
       }
+      .menuDetail:nth-child(2){
+        p{
+          @media screen and (max-width: $screenSmall) {
+            width: 85px;
+          }
+        }
+      }
       @media screen and (max-width: $screenSmall) {
-        margin-top: 20px;
-        flex-direction: column;
-       align-items: center;
+        margin-top: 0px;
+        flex-direction: row;
+        align-items: center;
       }
     }
     .productListItem {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-
       .productItem {
         width: 25%;
-        margin: 20px 0px;
+        margin: 20px 0px 35px 0;
         // border-radius: 20px;
         // border: 1px solid #000;
         height: 350px;
-
         .productImg {
           max-height: 250px;
           img {
@@ -71,47 +79,65 @@
             left: 50%;
             transform: translateX(-50%);
             top: 7px;
-            height: 250px;
+            height: 280px;
             border-radius: 15px 15px 0px 0px;
             border-bottom: none;
             border: 1px solid #adb3b6;
             @media screen and (max-width: $screenMedium) {
-              height: 300px;
+              height: 270px;
+            }
+            @media screen and (max-width: $screenSmall) {
+              height: 200px;
             }
           }
-          // :hover{
-          //   border: 2px solid #000;
-          //   border-radius: 0;
-          // }
         }
-
         .detailBorder {
           border: 1px solid #adb3b6;
           margin: 0 auto;
           width: 94.5%;
           border-radius: 0px 0px 15px 15px;
-
+          height: 130px;
           .productName {
             text-align: center;
-            padding-top: 20px;
+            padding-top: 55px;
+            @media screen and (max-width: $screenMedium) {
+              font-size: 15px;
+            }
+
+            @media screen and (max-width: $screenSmall) {
+              font-size: 12px;
+              padding-top: 12px;
+            }
           }
           .productPrice {
             margin-top: 10px;
             text-align: center;
             padding-bottom: 10px;
+            @media screen and (max-width: $screenMedium) {
+              font-size: 13px;
+            }
+            @media screen and (max-width: $screenSmall) {
+              font-size: 10px;
+            }
           }
           @media screen and (max-width: $screenMedium) {
-            padding-top: 55px;
-            height: 150px;
+            padding-top: 25px;
+            height: 110px;
+          }
+          @media screen and (max-width: $screenSmall) {
+            padding-top: 0px;
+            height: 60px;
+            
           }
         }
         @media screen and (max-width: $screenMedium) {
-          width: 45%;
-          height: 400px;
+          width: 31.5%;
         }
-
         @media screen and (max-width: $screenSmall) {
-          width: 70%;
+          width: 45%;
+          height: 260px;
+          margin-bottom: 5px;
+          margin-top: 10px;
         }
       }
       .productItem:hover {

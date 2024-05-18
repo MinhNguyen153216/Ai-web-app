@@ -32,7 +32,8 @@
       font-size: 20px;
       line-height: 1.6;
       color: #404040;
-
+      font-family: "Open Sans", Sans-serif;
+      letter-spacing: 0.8px;
       span {
         font-weight: bold;
       }
@@ -69,6 +70,5 @@
   }
   @media screen and (max-width: $screenSmall) {
     height: 100%;
-   
   }
 }

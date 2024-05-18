@@ -3,38 +3,46 @@ import { useState } from "react";
 import styleProduct from "../../assets/style/product.module.scss";
 import Image from "next/image";
 import Button from "@mui/material/Button";
+import Link from "next/link";
+
 const itemsTotal = [
   {
+    detailURL: "/sanpham/bottho1",
     imgURL: "/img/botthocaolanh01.png",
     imgALT: "alt of the img",
     itemName: "BỘT CAO LANH THÔ 1",
     itemPrice: "LIÊN HỆ",
   },
   {
+    detailURL: "/sanpham/bottho1",
     imgURL: "/img/botthocaolanh02.png",
     imgALT: "alt of the img",
     itemName: "BỘT CAO LANH THÔ 2",
     itemPrice: "LIÊN HỆ",
   },
   {
+    detailURL: "/sanpham/datloc",
     imgURL: "/img/botcaolanhloc.png",
     imgALT: "alt of the img",
     itemName: "BỘT CAO LANH LỌC",
     itemPrice: "LIÊN HỆ",
   },
   {
+    detailURL: "/sanpham/botsieumin",
     imgURL: "/img/botcaolanhsieumintrang.png",
     imgALT: "alt of the img",
     itemName: "BỘT CAO LANH SIÊU MỊN",
     itemPrice: "LIÊN HỆ",
   },
   {
+    detailURL: "/sanpham/botvangsm",
     imgURL: "/img/botcaolanhsmvang.png",
     imgALT: "alt of the img",
     itemName: "BỘT CAO LANH SM VÀNG",
     itemPrice: "LIÊN HỆ",
   },
   {
+    detailURL: "/sanpham/botvang04",
     imgURL: "/img/vang04.png",
     imgALT: "alt of the img",
     itemName: "VÀNG 04",
@@ -45,6 +53,7 @@ const itemsTotal = [
 // bot sieu min
 const items1 = [
   {
+    detailURL: "/sanpham/botsieumin",
     imgURL: "/img/botcaolanhsieumintrang.png",
     imgALT: "alt of the img",
     itemName: "BỘT CAO LANH SIÊU MỊN",
@@ -55,12 +64,14 @@ const items1 = [
 // bot tho
 const items2 = [
   {
+    detailURL: "/sanpham/bottho1",
     imgURL: "/img/botthocaolanh01.png",
     imgALT: "alt of the img",
     itemName: "BỘT CAO LANH THÔ 1",
     itemPrice: "LIÊN HỆ",
   },
   {
+    detailURL: "/sanpham/bottho2",
     imgURL: "/img/botthocaolanh02.png",
     imgALT: "alt of the img",
     itemName: "BỘT CAO LANH THÔ 2",
@@ -71,12 +82,14 @@ const items2 = [
 // bot vang
 const items3 = [
   {
+    detailURL: "/sanpham/botvangsm",
     imgURL: "/img/botcaolanhsmvang.png",
     imgALT: "alt of the img",
     itemName: "BỘT CAO LANH SM VÀNG",
     itemPrice: "LIÊN HỆ",
   },
   {
+    detailURL: "/sanpham/botvang04",
     imgURL: "/img/vang04.png",
     imgALT: "alt of the img",
     itemName: "VÀNG 04",
@@ -87,6 +100,7 @@ const items3 = [
 // dat loc
 const items4 = [
   {
+    detailURL: "/sanpham/datloc",
     imgURL: "/img/botcaolanhloc.png",
     imgALT: "alt of the img",
     itemName: "BỘT CAO LANH LỌC",
@@ -97,22 +111,24 @@ const items4 = [
 function ProductItem(props: any): any {
   return (
     <div className={styleProduct.productItem}>
-      <div className={styleProduct.productImg}>
-        <Image
-          src={props.item.imgURL}
-          width={10000}
-          height={10000}
-          alt={props.item.imgALT}
-        />
-      </div>
-      <div className={styleProduct.detailBorder}>
-        <div className={styleProduct.productName}>
-          <h3>{props.item.itemName}</h3>
+      <Link href={props.item.detailURL}>
+        <div className={styleProduct.productImg}>
+          <Image
+            src={props.item.imgURL}
+            width={10000}
+            height={10000}
+            alt={props.item.imgALT}
+          />
         </div>
-        <div className={styleProduct.productPrice}>
-          <p>GIÁ: {props.item.itemPrice}</p>
+        <div className={styleProduct.detailBorder}>
+          <div className={styleProduct.productName}>
+            <h3>{props.item.itemName}</h3>
+          </div>
+          <div className={styleProduct.productPrice}>
+            <p>GIÁ: {props.item.itemPrice}</p>
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
@@ -180,38 +196,48 @@ export default function Product() {
   return (
     <>
       <div className={styleProduct.Product}>
+        <h1>
+          <Link href="/sanpham">SẢN PHẨM</Link>
+        </h1>
         <div className={`globalContainer ${styleProduct.productDetail}`}>
           {/* menu */}
           <div className={styleProduct.productMenu}>
-            <div
-              className={styleProduct.menuDetail}
-              onClick={() => handleClickProductType(0)}
-            >
-              <p>Tất cả sản phẩm</p>
+            {/* total */}
+            <div className={styleProduct.menuTotal}>
+              <div
+                className={styleProduct.menuDetail}
+                onClick={() => handleClickProductType(0)}
+              >
+                <h2>Tất cả</h2>
+              </div>
             </div>
-            <div
-              className={styleProduct.menuDetail}
-              onClick={() => handleClickProductType(1)}
-            >
-              <p>Bột siêu mịn</p>
-            </div>
-            <div
-              className={styleProduct.menuDetail}
-              onClick={() => handleClickProductType(2)}
-            >
-              <p>Bột thô</p>
-            </div>
-            <div
-              className={styleProduct.menuDetail}
-              onClick={() => handleClickProductType(3)}
-            >
-              <p>Bột vàng</p>
-            </div>
-            <div
-              className={styleProduct.menuDetail}
-              onClick={() => handleClickProductType(4)}
-            >
-              <p>Đất lọc</p>
+
+            {/* specific */}
+            <div className={styleProduct.menuSpecific}>
+              <div
+                className={styleProduct.menuDetail}
+                onClick={() => handleClickProductType(1)}
+              >
+                <p>Bột siêu mịn</p>
+              </div>
+              <div
+                className={styleProduct.menuDetail}
+                onClick={() => handleClickProductType(2)}
+              >
+                <p>Bột thô</p>
+              </div>
+              <div
+                className={styleProduct.menuDetail}
+                onClick={() => handleClickProductType(3)}
+              >
+                <p>Bột vàng</p>
+              </div>
+              <div
+                className={styleProduct.menuDetail}
+                onClick={() => handleClickProductType(4)}
+              >
+                <p>Đất lọc</p>
+              </div>
             </div>
           </div>
 

@@ -1,7 +1,5 @@
 @import "./mediaScreen.scss";
 .header {
-  margin: 0;
-  margin-bottom: 10px;
   .headerContainer {
     max-height: 100px;
     max-width: 1200px;
@@ -208,7 +206,7 @@
     background: rgb(195, 0, 0);
     height: 2px;
     border: none;
-    margin-bottom: 10px;
+    
   }
 }
 .clickedPage {

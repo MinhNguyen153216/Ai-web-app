@@ -15,7 +15,7 @@ export default function HomePage() {
           </div>
           
 
-          <div className={`globalContainer`}>
+          <div className={`globalContainer ${styleHomePage.productContainer}`}>
             <div className={styleHomePage.Product}>
               <Product></Product>
             </div>

@@ -1,5 +1,4 @@
 @import "./mediaScreen.scss";
-
 .homeContainer {
   width: 95%;
   max-width: 1500px;
@@ -34,4 +33,8 @@
       }
     }
   }
+}
+.productContainer {
+  max-width: 100%;
+  background-color: #ebebeb;
 }

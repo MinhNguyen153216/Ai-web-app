@@ -1,67 +1,151 @@
 @import "./mediaScreen.scss";
 .Product {
-  height: 900px;
+  background-color: #ebebeb;
+  padding-top: 15px;
+  h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    a {
+      color: black;
+      &:hover {
+        color: rgb(195, 0, 0);
+      }
+    }
+  }
   .productDetail {
-    padding-left: 8px;
     .productMenu {
       display: flex;
-      justify-content: flex-end;
-      margin-bottom: 5px;
-      margin-top: 10px;
-      .menuDetail {
-        // border: 1px solid #000;
-        text-align: center;
-        margin: 0 10px;
-        p {
-          color: black;
-          text-decoration: none;
-          font-size: 18px;
-          transition: 0.3s;
-          cursor: pointer;
-          font-family: "Open Sans", Sans-serif;
-          letter-spacing: 0.8px;
-          @media screen and (max-width: $screenMedium) {
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 5px 15px 0px 15px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid rgb(195, 0, 0);
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -13.5px;
+        left: -15px;
+        width: 17px;
+        height: 12px;
+        border-top: 2px solid rgb(195, 0, 0);
+        border-left: 2px solid rgb(195, 0, 0);
+        border-top-left-radius: 100%;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -13.5px;
+        right: -15px;
+        width: 17px;
+        height: 12px;
+        border-top: 2px solid rgb(195, 0, 0);
+        border-right: 2px solid rgb(195, 0, 0);
+        border-top-right-radius: 100%;
+      }
+      .menuTotal {
+        .menuDetail {
+          text-align: center;
+          margin: 0 10px;
+          white-space: nowrap;
+          p {
+            color: black;
+            text-decoration: none;
             font-size: 22px;
+            transition: 0.3s;
+            cursor: pointer;
+            font-family: "Open Sans", Sans-serif;
+            letter-spacing: 0.8px;
+            @media screen and (max-width: $screenMedium) {
+              font-size: 22px;
+            }
+            @media screen and (max-width: $screenSmall) {
+              font-size: 15px;
+              width: 70px;
+              letter-spacing: 0px;
+            }
+          }
+          p:hover {
+            cursor: pointer;
+            color: red;
+            // border-bottom: 1px solid red;
+          }
+          @media screen and (max-width: $screenMedium) {
+            p {
+              font-size: 20px;
+            }
+          }
+          @media screen and (max-width: 550px) {
+            display: none;
           }
           @media screen and (max-width: $screenSmall) {
-            font-size: 15px;
-            width: 70px;
-            letter-spacing: 0px;
-          }
-        }
-        p:hover {
-          cursor: pointer;
-          color: red;
-          // border-bottom: 1px solid red;
-        }
-        @media screen and (max-width: $screenSmall) {
-          margin: 20px 0 0 0;
-        }
-      }
-      .menuDetail:nth-child(1) {
-        margin-right: 70px;
-        p {
-          @media screen and (max-width: $screenSmall) {
-            font-size: 18px;
-            width: 90px;
-          }
-        }
-        @media screen and (max-width: $screenSmall) {
-          margin-right: 20px;
-          font-weight: bold;
-        }
-      }
-      .menuDetail:nth-child(2) {
-        p {
-          @media screen and (max-width: $screenSmall) {
-            width: 85px;
+            p {
+              font-size: 18px;
+            }
           }
         }
       }
-      @media screen and (max-width: $screenSmall) {
-        margin-top: 0px;
-        flex-direction: row;
+      .menuSpecific {
+        display: flex;
+        justify-content: center;
         align-items: center;
+        white-space: nowrap;
+        .menuDetail {
+          text-align: center;
+          margin: 0 5px;
+          padding: 5px;
+          border: 1px solid black;
+          border-radius: 5px;
+          background-color: white;
+          p {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+            cursor: pointer;
+            font-family: "Open Sans", Sans-serif;
+            letter-spacing: 0.8px;
+            &:hover {
+              cursor: pointer;
+              color: red;
+            }
+            @media screen and (max-width: $screenMedium) {
+              font-size: 22px;
+            }
+            @media screen and (max-width: $screenSmall) {
+              font-size: 15px;
+              width: 70px;
+              letter-spacing: 0px;
+            }
+          }
+          @media screen and (max-width: $screenSmall) {
+            margin: 20px 0 0 0;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2px;
+            p {
+              display: inline-block;
+            }
+          }
+        }
+        @media screen and (max-width: $screenMedium) {
+          .menuDetail {
+            margin: 0 5px;
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+        @media screen and (max-width: $screenSmall) {
+          white-space: wrap;
+        }
+      }
+      @media screen and (max-width: 550px) {
+        justify-content: center;
       }
     }
     .productListItem {
@@ -72,9 +156,9 @@
       .productItem {
         width: 25%;
         margin: 20px 0px 35px 0;
-        // border-radius: 20px;
-        // border: 1px solid #000;
-        height: 350px;
+        a {
+          color: black;
+        }
         .productImg {
           max-height: 250px;
           img {
@@ -96,6 +180,7 @@
           }
         }
         .detailBorder {
+          background-color: white;
           border: 1px solid #adb3b6;
           margin: 0 auto;
           width: 94.5%;

@@ -2,17 +2,28 @@
 .Product {
   background-color: #ebebeb;
   padding-top: 15px;
-  h1 {
-    text-align: center;
-    text-decoration: underline;
-    margin-bottom: 15px;
-    a {
-      color: black;
-      &:hover {
-        color: rgb(195, 0, 0);
+  .productTitle {
+    h1 {
+      text-align: center;
+      margin-bottom: 15px;
+      margin-top: 10px;
+      a {
+        color: black;
+        position: relative;
+        padding: 0 10px;
+      }
+      a:after {
+        content: "";
+        position: absolute;
+        background-color: var(--color-mainRed);
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
       }
     }
   }
+
   .productDetail {
     .productMenu {
       display: flex;
@@ -21,7 +32,7 @@
       flex-wrap: wrap;
       margin: 5px 15px 0px 15px;
       padding-bottom: 10px;
-      border-bottom: 2px solid rgb(195, 0, 0);
+      border-bottom: 2px solid var(--color-mainRed);
       position: relative;
       &:before {
         content: "";
@@ -30,8 +41,8 @@
         left: -15px;
         width: 17px;
         height: 12px;
-        border-top: 2px solid rgb(195, 0, 0);
-        border-left: 2px solid rgb(195, 0, 0);
+        border-top: 2px solid var(--color-mainRed);
+        border-left: 2px solid var(--color-mainRed);
         border-top-left-radius: 100%;
       }
       &:after {
@@ -41,52 +52,30 @@
         right: -15px;
         width: 17px;
         height: 12px;
-        border-top: 2px solid rgb(195, 0, 0);
-        border-right: 2px solid rgb(195, 0, 0);
+        border-top: 2px solid var(--color-mainRed);
+        border-right: 2px solid var(--color-mainRed);
         border-top-right-radius: 100%;
       }
+      // total
       .menuTotal {
         .menuDetail {
           text-align: center;
           margin: 0 10px;
           white-space: nowrap;
-          p {
-            color: black;
-            text-decoration: none;
-            font-size: 22px;
-            transition: 0.3s;
+          h2{
             cursor: pointer;
-            font-family: "Open Sans", Sans-serif;
-            letter-spacing: 0.8px;
-            @media screen and (max-width: $screenMedium) {
-              font-size: 22px;
+            &:hover{
+              color: var(--color-mainRed);
+              transition: 0.3s;
             }
             @media screen and (max-width: $screenSmall) {
-              font-size: 15px;
-              width: 70px;
-              letter-spacing: 0px;
-            }
-          }
-          p:hover {
-            cursor: pointer;
-            color: red;
-            // border-bottom: 1px solid red;
-          }
-          @media screen and (max-width: $screenMedium) {
-            p {
-              font-size: 20px;
-            }
-          }
-          @media screen and (max-width: 550px) {
-            display: none;
-          }
-          @media screen and (max-width: $screenSmall) {
-            p {
-              font-size: 18px;
+              display: none;
             }
           }
         }
       }
+
+      // specific
       .menuSpecific {
         display: flex;
         justify-content: center;
@@ -115,33 +104,30 @@
               font-size: 22px;
             }
             @media screen and (max-width: $screenSmall) {
-              font-size: 15px;
-              width: 70px;
+              font-size: 18px;
+              width: 85px;
               letter-spacing: 0px;
             }
           }
           @media screen and (max-width: $screenSmall) {
-            margin: 20px 0 0 0;
-            height: 50px;
+            margin: 20px 0px 0px 0px;
+            height: 40px;
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
             padding: 2px;
-            p {
-              display: inline-block;
-            }
+            
           }
         }
         @media screen and (max-width: $screenMedium) {
           .menuDetail {
             margin: 0 5px;
-            p {
-              font-size: 18px;
-            }
           }
         }
         @media screen and (max-width: $screenSmall) {
           white-space: wrap;
+          margin: 4px 0;
+          padding-bottom: 0px;
         }
       }
       @media screen and (max-width: 550px) {
@@ -170,7 +156,7 @@
             height: 280px;
             border-radius: 15px 15px 0px 0px;
             border-bottom: none;
-            border: 1px solid #adb3b6;
+            border: 1px solid var(--color-mainGray);
             @media screen and (max-width: $screenMedium) {
               height: 270px;
             }
@@ -181,7 +167,7 @@
         }
         .detailBorder {
           background-color: white;
-          border: 1px solid #adb3b6;
+          border: 1px solid var(--color-mainGray);
           margin: 0 auto;
           width: 94.5%;
           border-radius: 0px 0px 15px 15px;
@@ -192,6 +178,7 @@
             padding-top: 55px;
             @media screen and (max-width: $screenMedium) {
               font-size: 15px;
+              padding-top: 20px;
             }
 
             @media screen and (max-width: $screenSmall) {
@@ -225,7 +212,7 @@
         @media screen and (max-width: $screenSmall) {
           width: 45%;
           height: 260px;
-          margin-bottom: 5px;
+          margin-bottom: 15px;
           margin-top: 10px;
         }
       }

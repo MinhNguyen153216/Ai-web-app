@@ -1,6 +1,6 @@
 .contact {
   margin-top: 25px;
-  height: 620px;
+  height: 630px;
   .contactTitle {
     text-align: center;
     margin-bottom: 55px;
@@ -14,7 +14,7 @@
     h1:after {
       content: "";
       position: absolute;
-      background-color: rgb(195, 0, 0);
+      background-color: var(--color-mainRed);
       height: 3px;
       width: 100%;
       left: 0;
@@ -36,7 +36,7 @@
       .contactInf {
         h5,
         h1 {
-          color: rgb(195, 0, 0);
+          color: var(--color-mainRed);
           cursor: pointer;
         }
         .address {

@@ -196,9 +196,11 @@ export default function Product() {
   return (
     <>
       <div className={styleProduct.Product}>
-        <h1>
-          <Link href="/sanpham">SẢN PHẨM</Link>
-        </h1>
+        <div className={styleProduct.productTitle}>
+          <h1>
+            <Link href="/sanpham">SẢN PHẨM</Link>
+          </h1>
+        </div>
         <div className={`globalContainer ${styleProduct.productDetail}`}>
           {/* menu */}
           <div className={styleProduct.productMenu}>

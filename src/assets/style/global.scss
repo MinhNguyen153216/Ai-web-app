@@ -11,6 +11,10 @@ ul {
 a {
   text-decoration: none;
 }
+:root{
+  --color-mainRed: rgb(195, 0, 0);
+  --color-mainGray: #adb3b6;
+}
 .globalContainer {
   max-width: 1200px;
   margin: auto;

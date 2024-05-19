@@ -1,7 +1,7 @@
 @import "./mediaScreen.scss";
 .introduce {
-  margin-top: 35px;
-  height: 610px;
+  margin-top: 25px;
+  height: 630px;
   // border: 1px solid #000;
   .introduceTitle {
     text-align: center;
@@ -16,7 +16,7 @@
     h1:after {
       content: "";
       position: absolute;
-      background-color: rgb(195, 0, 0);
+      background-color: var(--color-mainRed);
       height: 3px;
       width: 100%;
       left: 0;
@@ -24,7 +24,7 @@
     }
   }
   .introduceContainer {
-    margin-top: 50px;
+    margin-top: 40px;
     .content p {
       width: 80%;
       //   border: 1px solid #000;
@@ -34,6 +34,7 @@
       color: #404040;
       font-family: "Open Sans", Sans-serif;
       letter-spacing: 0.8px;
+      // font-family: 'Roboto Mono', monospace;
       span {
         font-weight: bold;
       }

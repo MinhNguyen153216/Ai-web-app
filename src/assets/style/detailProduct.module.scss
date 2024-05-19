@@ -1,0 +1,170 @@
+@import "./mediaScreen.scss";
+.detailProduct {
+  .detailProductContainer {
+    border: 1px solid #000;
+    margin: 15px auto;
+    // background-color: gray;
+    // Ảnh, tên, giá sản phẩm
+    .detailProductTitle {
+      h1 {
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        a {
+          color: black;
+          position: relative;
+          padding: 0 10px;
+        }
+        a:after {
+          content: "";
+          position: absolute;
+          background-color: var(--color-mainRed);
+          height: 3px;
+          width: 100%;
+          left: 0;
+          bottom: -5px;
+        }
+      }
+    }
+    .productMain {
+      // border: 1px solid #000;
+      // background-color: yellow;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 40px;
+      .MainLeft {
+        width: 30%;
+        border-right: 1px solid var(--color-mainGray);
+        margin-left: 15px;
+      }
+      .MainRight {
+        width: 67%;
+        // border: 1px solid #000;
+        display: flex;
+        flex-direction: column;
+        .fastLink {
+          nav {
+            ul {
+              li {
+                display: inline-block;
+                padding: 0px 3px;
+                a {
+                  color: black;
+                }
+              }
+              li:nth-child(1) {
+                padding-left: 0;
+                padding-right: 3px;
+              }
+              li a:hover {
+                color: red;
+                transition: 0.3s;
+              }
+            }
+          }
+        }
+        .productName {
+          margin-top: 10px;
+
+          p {
+            // font-family:'Roboto Mono', monospace;
+            // font-family:'Nunito', sans-serif;
+            // font-family: 'Noto Serif', serif;
+            // font-family: 'Saira', sans-serif;
+            font-family: "Roboto", sans-serif;
+            font-weight: 530;
+            font-size: 30px;
+            position: relative;
+            display: inline-block;
+          }
+
+          // Border góc vuông trái
+
+          // p:after {
+          //   content: "";
+          //   position: absolute;
+          //   background-color: rgb(195, 0, 0);
+          //   height: 2px;
+          //   width: 10%;
+          //   left: -8px;
+          //   bottom: -5px;
+          //   display: inline-block;
+          // }
+          // p::before {
+          //   content: "";
+          //   position: absolute;
+          //   background-color: rgb(195, 0, 0);
+          //   width: 3px;
+          //   height: 70%;
+          //   left: 0;
+          //   top: 15px;
+          //   display: inline-block;
+          //   margin-left: -8px;
+
+          // }
+
+          // border: 1px solid #000;
+          p:after {
+            content: "";
+            position: absolute;
+            background-color: var(--color-mainRed);
+            height: 2px;
+            width: 20%;
+            left: 0;
+            bottom: -5px;
+            display: inline-block;
+          }
+        }
+        .productPrice {
+          font-family: "Roboto Mono", monospace;
+          // border: 1px solid #000;
+          margin-top: 30px;
+          a {
+            color: red;
+            font-size: 25px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    // Chi tiết, mô tả sản phẩm
+    .productContent {
+      // border: 1px solid #000;
+      // background-color: green;
+      margin-top: 20px;
+      padding-left: 15px;
+      height: 500px;
+      .productContentTitle {
+        h2 {
+          font-size: 16px;
+          color: white;
+          display: inline-block;
+          position: relative;
+          padding: 12px 15px;
+          background-color: var(--color-mainRed);
+          border: 1px solid var(--color-mainRed);
+          border-radius: 6px;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
+        h2:after {
+          content: "";
+          height: 2px;
+          width: 1460%;
+          background-color: rgb(195, 0, 0);
+          position: absolute;
+          bottom: 0px;
+        }
+      }
+      .productContentDetail {
+        margin-top: 20px;
+        p{
+          color: var(--color-mainRed);
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}

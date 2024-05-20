@@ -72,6 +72,9 @@
             @media screen and (max-width: $screenSmall) {
               display: none;
             }
+            @media screen and (max-width: $screenMediumLarge) {
+              display: none;
+            }
           }
         }
       }
@@ -116,6 +119,7 @@
             margin: 20px 0px 0px 0px;
             min-height: 45px;
             display: flex;
+            justify-content: center;
             align-items: center;
             padding: 0px;
             width: 24%;
@@ -141,7 +145,6 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-
       .productItem {
         width: 25%;
         margin: 20px 0px 35px 0;
@@ -174,16 +177,16 @@
           margin: 0 auto;
           width: 94.5%;
           border-radius: 0px 0px 15px 15px;
-          height: 130px;
+          min-height: 130px;
 
           .productName {
             text-align: center;
             padding-top: 55px;
             @media screen and (max-width: $screenMedium) {
               font-size: 15px;
-              padding-top: 20px;
+              // padding-top: 20px;
+              padding: 20px 5px 0px 5px;
             }
-
             @media screen and (max-width: $screenSmall) {
               font-size: 12px;
               padding-top: 12px;
@@ -202,11 +205,11 @@
           }
           @media screen and (max-width: $screenMedium) {
             padding-top: 25px;
-            height: 110px;
+            min-height: 110px;
           }
           @media screen and (max-width: $screenSmall) {
             padding-top: 0px;
-            height: 60px;
+            min-height: 60px;
           }
         }
         @media screen and (max-width: $screenMedium) {

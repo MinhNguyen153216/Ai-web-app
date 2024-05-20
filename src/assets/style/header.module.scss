@@ -44,6 +44,7 @@
       }
       @media screen and (max-width: $screenSmall) {
         justify-content: right;
+        transform: translateX(10px);
         a {
           height: 75px;
           img {

@@ -135,9 +135,14 @@ function ProductItem(props: any): any {
 
 export default function Product() {
   const [chooseType, setChooseType] = useState(0);
+  const [chooseMenu, setChooseMenu] = useState(0);
 
   function handleClickProductType(num: number) {
     setChooseType((chooseType) => num);
+  }
+
+  function handleClickMenuProduct(num: number) {
+    setChooseMenu((chooseMenu) => num);
   }
 
   function ItemType(): any {
@@ -198,7 +203,15 @@ export default function Product() {
       <div className={styleProduct.Product}>
         <div className={styleProduct.productTitle}>
           <h1>
-            <Link href="/sanpham">SẢN PHẨM</Link>
+            <Link
+              href="/sanpham"
+              onClick={() => {
+                handleClickProductType(0);
+                handleClickMenuProduct(0);
+              }}
+            >
+              SẢN PHẨM
+            </Link>
           </h1>
         </div>
         <div className={`globalContainer ${styleProduct.productDetail}`}>
@@ -208,7 +221,10 @@ export default function Product() {
             <div className={styleProduct.menuTotal}>
               <div
                 className={styleProduct.menuDetail}
-                onClick={() => handleClickProductType(0)}
+                onClick={() => {
+                  handleClickProductType(0);
+                  handleClickMenuProduct(0);
+                }}
               >
                 <h2>Tất cả</h2>
               </div>
@@ -217,26 +233,54 @@ export default function Product() {
             {/* specific */}
             <div className={styleProduct.menuSpecific}>
               <div
-                className={styleProduct.menuDetail}
-                onClick={() => handleClickProductType(1)}
+                className={
+                  styleProduct.menuDetail +
+                  " " +
+                  `${chooseMenu === 1 ? styleProduct.clickedMenu : ""}`
+                }
+                onClick={() => {
+                  handleClickProductType(1);
+                  handleClickMenuProduct(1);
+                }}
               >
                 <p>Bột siêu mịn</p>
               </div>
               <div
-                className={styleProduct.menuDetail}
-                onClick={() => handleClickProductType(2)}
+                className={
+                  styleProduct.menuDetail +
+                  " " +
+                  `${chooseMenu === 2 ? styleProduct.clickedMenu : ""}`
+                }
+                onClick={() => {
+                  handleClickProductType(2);
+                  handleClickMenuProduct(2);
+                }}
               >
                 <p>Bột thô</p>
               </div>
               <div
-                className={styleProduct.menuDetail}
-                onClick={() => handleClickProductType(3)}
+                className={
+                  styleProduct.menuDetail +
+                  " " +
+                  `${chooseMenu === 3 ? styleProduct.clickedMenu : ""}`
+                }
+                onClick={() => {
+                  handleClickProductType(3);
+                  handleClickMenuProduct(3);
+                }}
               >
                 <p>Bột vàng</p>
               </div>
               <div
-                className={styleProduct.menuDetail}
-                onClick={() => handleClickProductType(4)}
+                className={
+                  styleProduct.menuDetail +
+                  " " +
+                  `${chooseMenu === 4 ? styleProduct.clickedMenu : ""}`
+                }
+                onClick={() => {
+                  handleClickProductType(4);
+                  handleClickMenuProduct(4);
+                }}
               >
                 <p>Đất lọc</p>
               </div>

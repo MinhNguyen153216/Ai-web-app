@@ -1,4 +1,5 @@
 @import "./mediaScreen.scss";
+
 .Product {
   background-color: #ebebeb;
   padding-top: 15px;
@@ -62,9 +63,9 @@
           text-align: center;
           margin: 0 10px;
           white-space: nowrap;
-          h2{
+          h2 {
             cursor: pointer;
-            &:hover{
+            &:hover {
               color: var(--color-mainRed);
               transition: 0.3s;
             }
@@ -82,6 +83,7 @@
         align-items: center;
         white-space: nowrap;
         .menuDetail {
+          transition: 1s;
           text-align: center;
           margin: 0 5px;
           padding: 5px;
@@ -96,6 +98,7 @@
             cursor: pointer;
             font-family: "Open Sans", Sans-serif;
             letter-spacing: 0.8px;
+            display: block;
             &:hover {
               cursor: pointer;
               color: red;
@@ -104,19 +107,18 @@
               font-size: 22px;
             }
             @media screen and (max-width: $screenSmall) {
-              font-size: 18px;
+              font-size: 17px;
               width: 85px;
               letter-spacing: 0px;
             }
           }
           @media screen and (max-width: $screenSmall) {
             margin: 20px 0px 0px 0px;
-            height: 40px;
+            min-height: 45px;
             display: flex;
-            // justify-content: center;
             align-items: center;
-            padding: 2px;
-            
+            padding: 0px;
+            width: 24%;
           }
         }
         @media screen and (max-width: $screenMedium) {
@@ -125,6 +127,7 @@
           }
         }
         @media screen and (max-width: $screenSmall) {
+          width: 100%;
           white-space: wrap;
           margin: 4px 0;
           padding-bottom: 0px;
@@ -239,5 +242,14 @@
 
   @media screen and (max-width: $screenSmall) {
     display: block;
+  }
+}
+.clickedMenu {
+  background-color: var(--color-mainRed) !important;
+  position: relative;
+  transform: translateY(-10px) !important;
+  box-shadow: 4px 4px 4px var(--color-mainGray);
+  p {
+    color: white !important;
   }
 }

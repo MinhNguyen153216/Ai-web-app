@@ -15,9 +15,9 @@ export default function GioiThieu() {
         <div className={`globalContainer ${styleGioiThieu.introduceContainer}`}>
           <div className={styleGioiThieu.content}>
             <p>
-              Trước tiên, tôi xin thay mặt Ban TGĐ cùng toàn thể CBNV của Công
-              ty Cổ phần Khoáng sản Phước nhân (KSPN) xin bày tỏ lòng tri ân,
-              cảm kích sâu sắc đến toàn thể{" "}
+              &ensp;&ensp;&ensp;Trước tiên, tôi xin thay mặt Ban TGĐ cùng toàn
+              thể CBNV của Công ty Cổ phần Khoáng sản Phước nhân (KSPN) xin bày
+              tỏ lòng tri ân, cảm kích sâu sắc đến toàn thể{" "}
               <span>quý vị, quý Khách hàng, Đối tác</span> đã luôn đồng hành
               cùng KSPN trên suốt chặng đường phát triển qua. <br></br>
             </p>
@@ -37,8 +37,10 @@ export default function GioiThieu() {
               Thay mặt Ban Tổng Giám đốc, cùng tập thể CBNV, tôi xin kính chúc
               quý vị , quý Khách hàng, Đối tác và các bên hữu quan sức khỏe,
               hạnh phúc và thành công!
-              <br></br>Trân trọng cám ơn.
+              
             </p>
+            
+            <p className={styleGioiThieu.sincere}>Trân trọng cám ơn.</p>
           </div>
           {/* <div className={styleGioiThieu.companyInformation}>
             <div className={styleGioiThieu.companyLogo}>

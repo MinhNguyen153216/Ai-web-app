@@ -1,15 +1,15 @@
 @import "./mediaScreen.scss";
+// @import "~animate.css/animate.css";
 .detailProduct {
+  background-color: #ebebeb;
   .detailProductContainer {
-    border: 1px solid #000;
-    margin: 15px auto;
-    // background-color: gray;
+    max-height: 1300px;
     // Ảnh, tên, giá sản phẩm
+    padding-top: 25px;
     .detailProductTitle {
       h1 {
         text-align: center;
         margin-bottom: 15px;
-        margin-top: 10px;
         a {
           color: black;
           position: relative;
@@ -19,7 +19,7 @@
           content: "";
           position: absolute;
           background-color: var(--color-mainRed);
-          height: 3px;
+          height: 2.5px;
           width: 100%;
           left: 0;
           bottom: -5px;
@@ -27,142 +27,244 @@
       }
     }
     .productMain {
-      // border: 1px solid #000;
-      // background-color: yellow;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-top: 40px;
-      .MainLeft {
-        width: 30%;
-        border-right: 1px solid var(--color-mainGray);
-        margin-left: 15px;
-      }
-      .MainRight {
-        width: 67%;
-        // border: 1px solid #000;
-        display: flex;
-        flex-direction: column;
-        .fastLink {
-          nav {
-            ul {
-              li {
-                display: inline-block;
-                padding: 0px 3px;
-                a {
-                  color: black;
-                }
+      width: 100%;
+      padding-left: 15px;
+      .fastLink {
+        nav {
+          ul {
+            li {
+              display: inline-block;
+              padding: 0px 3px;
+              a {
+                color: rgb(51, 61, 136);
               }
-              li:nth-child(1) {
-                padding-left: 0;
-                padding-right: 3px;
-              }
-              li a:hover {
-                color: red;
-                transition: 0.3s;
-              }
+            }
+            li:nth-child(1) {
+              padding-left: 0;
+              padding-right: 3px;
+            }
+            li a:hover {
+              color: red;
+              transition: 0.3s;
             }
           }
         }
-        .productName {
-          margin-top: 10px;
-
-          p {
-            // font-family:'Roboto Mono', monospace;
-            // font-family:'Nunito', sans-serif;
-            // font-family: 'Noto Serif', serif;
-            // font-family: 'Saira', sans-serif;
-            font-family: "Roboto", sans-serif;
-            font-weight: 530;
-            font-size: 30px;
-            position: relative;
-            display: inline-block;
-          }
-
-          // Border góc vuông trái
-
-          // p:after {
-          //   content: "";
-          //   position: absolute;
-          //   background-color: rgb(195, 0, 0);
-          //   height: 2px;
-          //   width: 10%;
-          //   left: -8px;
-          //   bottom: -5px;
-          //   display: inline-block;
-          // }
-          // p::before {
-          //   content: "";
-          //   position: absolute;
-          //   background-color: rgb(195, 0, 0);
-          //   width: 3px;
-          //   height: 70%;
-          //   left: 0;
-          //   top: 15px;
-          //   display: inline-block;
-          //   margin-left: -8px;
-
-          // }
-
-          // border: 1px solid #000;
-          p:after {
-            content: "";
-            position: absolute;
-            background-color: var(--color-mainRed);
-            height: 2px;
-            width: 20%;
-            left: 0;
-            bottom: -5px;
-            display: inline-block;
-          }
-        }
-        .productPrice {
-          font-family: "Roboto Mono", monospace;
-          // border: 1px solid #000;
-          margin-top: 30px;
-          a {
-            color: red;
-            font-size: 25px;
-            font-weight: bold;
-          }
+        @media screen and (max-width: $screenSmall) {
+          margin-top: 25px;
+          font-size: 15px;
         }
       }
-    }
-
-    // Chi tiết, mô tả sản phẩm
-    .productContent {
-      // border: 1px solid #000;
-      // background-color: green;
-      margin-top: 20px;
-      padding-left: 15px;
-      height: 500px;
-      .productContentTitle {
-        h2 {
-          font-size: 16px;
-          color: white;
-          display: inline-block;
+      .productName {
+        margin-top: 10px;
+        p {
+          // font-family:'Roboto Mono', monospace;
+          // font-family:'Nunito', sans-serif;
+          // font-family: 'Noto Serif', serif;
+          // font-family: 'Saira', sans-serif;
+          font-family: "Roboto", sans-serif;
+          font-weight: 530;
+          font-size: 30px;
           position: relative;
-          padding: 12px 15px;
-          background-color: var(--color-mainRed);
-          border: 1px solid var(--color-mainRed);
-          border-radius: 6px;
-          border-bottom-left-radius: 0px;
-          border-bottom-right-radius: 0px;
+          display: inline-block;
+          @media screen and (max-width: $screenSmall) {
+            font-size: 25px;
+          }
         }
-        h2:after {
+        p:after {
           content: "";
-          height: 2px;
-          width: 1460%;
-          background-color: rgb(195, 0, 0);
           position: absolute;
-          bottom: 0px;
+          background-color: var(--color-mainRed);
+          height: 2px;
+          width: 20%;
+          left: 0;
+          bottom: -5px;
+          display: inline-block;
         }
+        // Border góc vuông trái
+
+        // p:after {
+        //   content: "";
+        //   position: absolute;
+        //   background-color: rgb(195, 0, 0);
+        //   height: 2px;
+        //   width: 10%;
+        //   left: -8px;
+        //   bottom: -5px;
+        //   display: inline-block;
+        // }
+        // p::before {
+        //   content: "";
+        //   position: absolute;
+        //   background-color: rgb(195, 0, 0);
+        //   width: 3px;
+        //   height: 70%;
+        //   left: 0;
+        //   top: 15px;
+        //   display: inline-block;
+        //   margin-left: -8px;
+
+        // }
+
+        // border: 1px solid #000;
+        
       }
-      .productContentDetail {
-        margin-top: 20px;
-        p{
-          color: var(--color-mainRed);
-          line-height: 1.6;
+
+      .productItem {
+        display: flex;
+        .MainLeft {
+          margin-top: 20px;
+          width: 30%;
+          border-right: 1px solid var(--color-mainGray);
+          .productImg {
+            img {
+              width: 95%;
+              @media screen and (max-width: $screenMedium) {
+                height: 80%;
+              }
+            }
+            :hover {
+              scale: 1.1;
+              margin-top: 17px;
+              @media screen and (max-width: $screenSmall) {
+                margin-left: 5.8%;
+                scale: 1.15;
+                margin-bottom: 15px;
+              }
+            }
+          }
+          @media screen and (max-width: $screenMedium) {
+            width: 45%;
+          }
+          @media screen and (max-width: $screenSmall) {
+            width: 90%;
+            border-right: none;
+          }
+        }
+        .MainRight {
+          width: 66%;
+          display: flex;
+          flex-direction: column;
+          // Chi tiết, mô tả sản phẩm
+          .productContent {
+            margin-top: 20px;
+            padding-left: 15px;
+            // min-height: 490px;
+            max-height: 800px;
+            width: 100%;
+            .productContentTitle {
+              display: block;
+              border-bottom: 2px solid var(--color-mainRed);
+              h2 {
+                font-size: 16px;
+                color: white;
+                display: inline-block;
+                position: relative;
+                padding: 12px 15px;
+                background-color: var(--color-mainRed);
+                border: 1px solid var(--color-mainRed);
+                border-radius: 6px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+              }
+              // h2:after {
+              //   content: "";
+              //   height: 2px;
+              //   width: 1000%;
+              //   // width: 100%;
+              //   left: 0px;
+              //   background-color: rgb(195, 0, 0);
+              //   background-color: blue;
+              //   position: absolute;
+              //   bottom: -1px;
+              //   // bottom: -5px;
+              // }
+            }
+            .productContentDetail {
+              margin-top: 10px;
+              p {
+                color: black;
+                line-height: 1.6;
+                @media screen and (max-width: $screenMedium) {
+                  font-size: 13px;
+                }
+              }
+              a {
+                color: rgb(52, 99, 231);
+              }
+              a:hover {
+                color: red;
+                transition: 0.3s;
+              }
+              h3 {
+                color: var(--color-mainRed);
+                @media screen and (max-width: $screenMedium) {
+                  font-size: 17px;
+                  margin-bottom: 5px;
+                }
+              }
+              .productPrice {
+                width: 100%;
+                p {
+                  font-family: "Roboto Mono", monospace;
+                  // font-family:'Roboto Mono', monospace;
+                  // font-family:'Nunito', sans-serif;
+                  // font-family: 'Noto Serif', serif;
+                  font-family: "Saira", sans-serif;
+                  margin-top: 30px;
+                  display: inline-block;
+                  padding-bottom: 40px;
+                  a {
+                    color: white;
+                    background-color: var(--color-mainRed);
+                    font-size: 25px;
+                    font-weight: bold;
+                    border: 1px solid var(--color-mainRed);
+                    display: inline-block;
+                    padding: 10px 120px;
+                    letter-spacing: 0.8px;
+                    border-radius: 6px;
+                    margin-left: 53px;
+                    margin-top: 10px;
+                    &:hover {
+                      background-color: #e3001aef;
+                      border-color: #e3001aef;
+                    }
+                    @media screen and (max-width: $screenMedium) {
+                      margin-left: 0px;
+                      padding: 10px 55px;
+                      font-size: 20px;
+                    }
+                    @media screen and (max-width: $screenSmall) {
+                      padding: 8px 60px;
+                      font-size: 20px;
+                      margin-top: -5px;
+                      // padding-bottom: 0;
+                    }
+                  }
+                  @media screen and (max-width: $screenSmall) {
+                    padding-bottom: 30px;
+                  }
+                }
+                @media screen and (max-width: $screenMedium) {
+                  text-align: center;
+                }
+              }
+            }
+            @media screen and (max-width: $screenSmall) {
+              padding-left: 0;
+            }
+          }
+
+          @media screen and (max-width: $screenMedium) {
+            width: 50%;
+            // margin: 0 auto;
+          }
+          @media screen and (max-width: $screenSmall) {
+            width: 95%;
+          }
+        }
+        @media screen and (max-width: $screenSmall) {
+          flex-direction: column;
         }
       }
     }

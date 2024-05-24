@@ -28,6 +28,13 @@ const itemsTotal = [
     itemPrice: "LIÊN HỆ",
   },
   {
+    detailURL: "/sanpham/cat01",
+    imgURL: "/img/catmin.png",
+    imgALT: "alt of the img",
+    itemName: "CÁT MỊN",
+    itemPrice: "LIÊN HỆ",
+  },
+  {
     detailURL: "/sanpham/botsieumin",
     imgURL: "/img/botcaolanhsieumintrang.png",
     imgALT: "alt of the img",
@@ -39,6 +46,13 @@ const itemsTotal = [
     imgURL: "/img/botcaolanhsmvang.png",
     imgALT: "alt of the img",
     itemName: "BỘT CAO LANH SM VÀNG",
+    itemPrice: "LIÊN HỆ",
+  },
+  {
+    detailURL: "/sanpham/cat02",
+    imgURL: "/img/catto.png",
+    imgALT: "alt of the img",
+    itemName: "CÁT TO",
     itemPrice: "LIÊN HỆ",
   },
   {
@@ -104,6 +118,24 @@ const items4 = [
     imgURL: "/img/botcaolanhloc.png",
     imgALT: "alt of the img",
     itemName: "BỘT CAO LANH LỌC",
+    itemPrice: "LIÊN HỆ",
+  },
+];
+
+//cat
+const items5 = [
+  {
+    detailURL: "/sanpham/cat01",
+    imgURL: "/img/catmin.png",
+    imgALT: "alt of the img",
+    itemName: "CÁT MỊN",
+    itemPrice: "LIÊN HỆ",
+  },
+  {
+    detailURL: "/sanpham/cat02",
+    imgURL: "/img/catto.png",
+    imgALT: "alt of the img",
+    itemName: "CÁT TO",
     itemPrice: "LIÊN HỆ",
   },
 ];
@@ -183,6 +215,15 @@ export default function Product() {
             ))}
           </>
         );
+        //5
+        case 5:
+          return (
+            <>
+              {items5.map((item, i) => (
+                <ProductItem key={i} item={item} />
+              ))}
+            </>
+          );
       // default
       default:
         return (
@@ -283,6 +324,19 @@ export default function Product() {
                 }}
               >
                 <p>Đất lọc</p>
+              </div>
+              <div
+                className={
+                  styleProduct.menuDetail +
+                  " " +
+                  `${chooseMenu === 5 ? styleProduct.clickedMenu : ""}`
+                }
+                onClick={() => {
+                  handleClickProductType(5);
+                  handleClickMenuProduct(5);
+                }}
+              >
+                <p>Cát</p>
               </div>
             </div>
           </div>

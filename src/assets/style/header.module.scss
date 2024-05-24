@@ -175,7 +175,9 @@
       }
       @media screen and (max-width: $screenMedium) {
         display: block;
-        background-color: rgba(255, 0, 0, 0.315);
+        background-color: rgba(190, 188, 188, 0.728);
+        backdrop-filter: blur(5px);
+
         width: 100vw;
         height: 100vh;
         position: absolute;
@@ -189,7 +191,8 @@
       }
       @media screen and (max-width: $screenSmall) {
         display: block;
-        background-color: rgba(0, 0, 255, 0.352);
+        backdrop-filter: blur(5px);
+        background-color: rgba(190, 188, 188, 0.728);
         width: 100vw;
         height: 100vh;
         position: absolute;
@@ -202,6 +205,7 @@
         }
       }
     }
+  
   }
   .end {
     background: rgb(195, 0, 0);
@@ -209,21 +213,38 @@
     border: none;
     
   }
+
+  @media screen and (max-width: $screenMedium) {
+    position: sticky;
+    top: 0px;
+    position: -webkit-sticky;
+    z-index: 1;
+    background-color: #fff;
+    padding-top: 10px;
+  }
+  @media screen and (max-width: $screenSmall) {
+    position: sticky;
+    top: 0px;
+    position: -webkit-sticky;
+    z-index: 1;
+    background-color: #fff;
+   padding: 0px 10px 0 10px;
+  }
 }
 .clickedPage {
   background-position: 0% 90% !important;
 }
 .animationMenu1 {
-  animation: smallMenuAnimation 1s 1;
+  animation: smallMenuAnimation 0.5s 1;
 }
 .animationMenu2 {
-  animation: smallMenuAnimation 1.5s 1;
+  animation: smallMenuAnimation 1s 1;
 }
 .animationMenu3 {
-  animation: smallMenuAnimation 2s 1;
+  animation: smallMenuAnimation 1.5s 1;
 }
 .animationMenu4 {
-  animation: smallMenuAnimation 2.5s 1;
+  animation: smallMenuAnimation 1.8s 1;
 }
 @keyframes smallMenuAnimation {
   from {

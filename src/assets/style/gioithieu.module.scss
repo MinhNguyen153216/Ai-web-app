@@ -1,6 +1,7 @@
 @import "./mediaScreen.scss";
 .introduce {
-  margin-top: 25px;
+  background-color: #EBEBEB;
+  padding-top: 25px;
   height: 630px;
   // border: 1px solid #000;
   .introduceTitle {
@@ -25,20 +26,30 @@
   }
   .introduceContainer {
     margin-top: 40px;
-    .content p {
-      width: 80%;
-      //   border: 1px solid #000;
-      margin: 10px auto;
-      font-size: 20px;
-      line-height: 1.6;
-      color: #404040;
-      font-family: "Open Sans", Sans-serif;
-      letter-spacing: 0.8px;
-      // font-family: 'Roboto Mono', monospace;
-      span {
-        font-weight: bold;
+    .content {
+      p {
+        width: 80%;
+        //   border: 1px solid #000;
+        margin: 10px auto;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #404040;
+        font-family: "Open Sans", Sans-serif;
+        letter-spacing: 0.8px;
+        text-align: justify;
+        // font-family: 'Roboto Mono', monospace;
+        span {
+          font-weight: bold;
+        }
+      }
+      .sincere {
+       text-align: right;
+        color: #404040;
+        display: block;
+        margin: 10px auto;
       }
     }
+
     // .companyInformation{
     //     display: flex;
     //     border: 1px solid #000;

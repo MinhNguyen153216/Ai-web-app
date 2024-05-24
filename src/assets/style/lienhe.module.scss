@@ -1,82 +1,115 @@
+@import "./mediaScreen.scss";
 .contact {
-  margin-top: 25px;
-  height: 630px;
-  .contactTitle {
-    text-align: center;
-    margin-bottom: 55px;
-    h1 {
-      position: relative;
-      color: black;
-      padding: 0 10px;
-      cursor: pointer;
-      display: inline-block;
+  background-color: #EBEBEB;
+  .contactContainer {
+    padding-top: 25px;
+    min-height: 430px;
+    padding-bottom: 80px;
+    .contactTitle {
+      text-align: center;
+      margin-bottom: 55px;
+      h1 {
+        position: relative;
+        color: black;
+        padding: 0 10px;
+        cursor: pointer;
+        display: inline-block;
+      }
+      h1:after {
+        content: "";
+        position: absolute;
+        background-color: var(--color-mainRed);
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+      }
     }
-    h1:after {
-      content: "";
-      position: absolute;
-      background-color: var(--color-mainRed);
-      height: 3px;
-      width: 100%;
-      left: 0;
-      bottom: -5px;
-    }
-  }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 25px 0 15px;
-    gap: 15px;
-    // border: 1px solid #000;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 25px 0 15px;
+      gap: 15px;
+      // border: 1px solid #000;
 
-    .contactDetail {
-      width: 40%;
-      // padding-left: 18px;
-      .contactInf {
-        h5,
-        h1 {
-          color: var(--color-mainRed);
-          cursor: pointer;
-        }
-        .address {
-          margin-top: 15px;
-        }
-        p,
-        a {
-          font-size: 16px;
-          line-height: 2.2;
-          color: black;
-          font-style: oblique;
-          font-weight: bold;
-          cursor: pointer;
-        }
-        .phone:hover,
-        .email:hover {
+      .contactDetail {
+        width: 40%;
+        // padding-left: 18px;
+        .contactInf {
+          h5,
+          h1 {
+            color: var(--color-mainRed);
+            cursor: pointer;
+            @media screen and (max-width: $screenSmall) {
+              line-height: 1.7;
+            }
+          }
+          h1 {
+            @media screen and (max-width: $screenSmall) {
+              font-size: 25px;
+            }
+          }
+          .address {
+            margin-top: 15px;
+          }
+          p,
           a {
-            color: red;
+            font-size: 16px;
+            line-height: 2.2;
+            color: black;
+            font-style: oblique;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          .phone:hover,
+          .email:hover {
+            a {
+              color: red;
+            }
+          }
+          .phoneIcon,
+          .emailIcon,
+          .addressIcon,
+          .scheduleIcon {
+            color: black;
+            margin-right: 8px;
+            vertical-align: -6px;
           }
         }
-        .phoneIcon,
-        .emailIcon,
-        .addressIcon,
-        .scheduleIcon {
-          color: black;
-          margin-right: 8px;
-          vertical-align: -6px;
+        @media screen and (max-width: $screenSmall) {
+          width: 90%;
+          margin: 0 auto;
         }
       }
-    }
 
-    .map {
-      width: 59%;
-      
-      // padding: 0 35px;
-      iframe {
-        width: 95%;
-        height: 450px;
-        margin-left: 25px;
+      .map {
+        width: 59%;
+
+        // padding: 0 35px;
+        iframe {
+          width: 95%;
+          height: 450px;
+          margin-left: 25px;
+        }
+        // @media screen and (max-width: $screenMedium) {
+
+        // }
+        @media screen and (max-width: $screenSmall) {
+          display: none;
+        }
       }
+      @media screen and (max-width: $screenSmall) {
+        padding: 0;
+      }
+    }
+    @media screen and (max-width: $screenMedium) {
+      // height:;
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: $screenSmall) {
+      margin-bottom: 0px;
     }
   }
 }

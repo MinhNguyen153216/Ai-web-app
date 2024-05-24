@@ -38,18 +38,16 @@ export default function SanPham() {
 
             {/* Tên sản phẩm */}
             <div className={styleDetailProduct.productName}>
-              <p>Bột Siêu Mịn Trắng</p>
+              <p>Cát Mịn</p>
             </div>
 
             <div className={styleDetailProduct.productItem}>
-
               {/* Trái (ảnh) */}
               <div className={styleDetailProduct.MainLeft}>
-                
                 {/* Ảnh sản phẩm */}
-                <div className={styleDetailProduct.productImg}>
+                <div className={styleDetailProduct.productImg} style={{marginBottom: '20px'}}>
                   <Image
-                    src="/img/botcaolanhsieumintrang.png"
+                    src="/img/catmin.png"
                     width={340}
                     height={340}
                     alt="picture"
@@ -69,35 +67,26 @@ export default function SanPham() {
 
                   {/* Nội dung chính sản phẩm */}
                   <div className={styleDetailProduct.productContentDetail}>
-                    <p>
-                      Ứng dụng ngành sản xuất Hóa Chất, Phân Bón, Thuốc Trừ Sâu,
-                      Thuốc Bảo Vệ Thực Vật, Xử Lý Môi Trường, Thức Ăn Chăn Nuôi
-                    </p>
-                    <p>
-                      Al<sub>2</sub>o<sub>3</sub> : 18%{" "}
-                    </p>
-                    <p>
-                      Fe<sub>2</sub>o<sub>3</sub> : 1.77%{" "}
-                    </p>
+                    <p>Cỡ hạt &lt; 1mm</p>
+                    
                     <br />
-
-                    <br />
-                    <p>
-                      Kết quả thử nghiệm:{" "}
-                      <a href="/img/dattrang.pdf" target="_blank">
-                        Xem tại đây
-                      </a>
-                    </p>
+                    
                     {/* Giá sản phẩm */}
-                    <div className={`${styleDetailProduct.productPrice} ${styleDetailProduct.animated} ${styleDetailProduct.shake}`}>
+                    <div
+                      className={`${styleDetailProduct.productPrice} ${styleDetailProduct.animated} ${styleDetailProduct.shake}`}
+                    >
                       <p>
-                        <a className={styleDetailProduct.animate__headShake} href="tel:0908310833">LIÊN HỆ </a>
+                        <a
+                          className={styleDetailProduct.animate__headShake}
+                          href="tel:0908310833"
+                        >
+                          LIÊN HỆ{" "}
+                        </a>
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

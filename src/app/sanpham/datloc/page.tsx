@@ -38,14 +38,12 @@ export default function SanPham() {
 
             {/* Tên sản phẩm */}
             <div className={styleDetailProduct.productName}>
-              <p>Bột Cao Lanh Lọc</p>
+              <p>Cao Lanh Lọc</p>
             </div>
 
             <div className={styleDetailProduct.productItem}>
-
               {/* Trái (ảnh) */}
               <div className={styleDetailProduct.MainLeft}>
-                
                 {/* Ảnh sản phẩm */}
                 <div className={styleDetailProduct.productImg}>
                   <Image
@@ -69,9 +67,15 @@ export default function SanPham() {
 
                   {/* Nội dung chính sản phẩm */}
                   <div className={styleDetailProduct.productContentDetail}>
-                    <p>
-                    Ứng dụng ngành sản xuất sơn, giấy, keo, hóa chất, gốm sứ, gạch men
-                    </p>
+                    <p>Ứng dụng ngành sản xuất sơn, giấy, keo, hóa chất</p>
+
+                    <h3 style={{ fontWeight: "bold" }}>Loại cao lanh:</h3>
+                    <p>Bột cao lanh lọc siêu mịn 1 (SML01)</p>
+                    <p>Bột cao lanh lọc siêu mịn 2 (SML02)</p>
+                    <p>Đất lọc khô</p>
+                    <p>• Ứng dụng ngành sản xuất gốm sứ gạch men</p>
+                    <p>Cao lanh lọc ướt (</p>
+                    <p>• Ứng dụng ngành sản xuất gốm sứ gạch men</p>
                     <h3>Tiêu Chuẩn</h3>
                     <p>
                       Al<sub>2</sub>o<sub>3</sub> : 22.5%{" "}
@@ -79,12 +83,6 @@ export default function SanPham() {
                     <p>
                       Fe<sub>2</sub>o<sub>3</sub> : 1.62%{" "}
                     </p>
-                    
-                    <h3 style={{ fontWeight: "bold" }}>Loại cao lanh:</h3>
-                    <p>Bột cao lanh lọc siêu mịn 1 (SML01)</p>
-                    <p>Bột cao lanh lọc siêu mịn 2 (SML02)</p>
-                    <p>Cao lanh lọc khô</p>
-                    <p>Cao lanh lọc ướt</p>
                     <br />
                     <p>
                       Kết quả thử nghiệm:{" "}
@@ -93,15 +91,21 @@ export default function SanPham() {
                       </a>
                     </p>
                     {/* Giá sản phẩm */}
-                    <div className={`${styleDetailProduct.productPrice} ${styleDetailProduct.animated} ${styleDetailProduct.shake}`}>
+                    <div
+                      className={`${styleDetailProduct.productPrice} ${styleDetailProduct.animated} ${styleDetailProduct.shake}`}
+                    >
                       <p>
-                        <a className={styleDetailProduct.animate__headShake} href="tel:0908310833">LIÊN HỆ </a>
+                        <a
+                          className={styleDetailProduct.animate__headShake}
+                          href="tel:0908310833"
+                        >
+                          LIÊN HỆ{" "}
+                        </a>
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

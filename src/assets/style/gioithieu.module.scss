@@ -2,7 +2,7 @@
 .introduce {
   background-color: #EBEBEB;
   padding-top: 25px;
-  height: 630px;
+  min-height: 650px;
   // border: 1px solid #000;
   .introduceTitle {
     text-align: center;
@@ -41,6 +41,9 @@
         span {
           font-weight: bold;
         }
+        @media screen and (max-width: $screenSmall) {
+          font-size: 18px;
+        }
       }
       .sincere {
        text-align: right;
@@ -78,7 +81,7 @@
   }
   @media screen and (max-width: $screenMedium) {
     height: 100%;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
   @media screen and (max-width: $screenSmall) {
     height: 100%;

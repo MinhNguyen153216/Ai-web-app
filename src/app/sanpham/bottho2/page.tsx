@@ -38,7 +38,7 @@ export default function SanPham() {
 
             {/* Tên sản phẩm */}
             <div className={styleDetailProduct.productName}>
-              <p>Bột Cao Lanh Thô 02</p>
+              <p>Bột Cao Lanh Thô </p>
             </div>
 
             <div className={styleDetailProduct.productItem}>

@@ -115,9 +115,9 @@
           width: 30%;
           border-right: 1px solid var(--color-mainGray);
           .productImg {
-            transition-duration: 1s;
+            transition-duration: .5s;
             img {
-              transition-duration: 1s;
+              transition-duration: .5s;
               width: 95%;
               @media screen and (max-width: $screenMedium) {
                 height: 80%;
@@ -130,11 +130,19 @@
             &:hover {
               transform: scale(1.1);
               box-shadow: 5px 5px 5px solid black;
+              // transform: translateY(20px);
+              margin-top: 17px;
+              @media screen and (max-width: $screenSmall) {
+                margin-left: 30px;
+              }
             }
             @media screen and (max-width: $screenSmall) {
               display: flex;
               justify-content: center;
               align-items: center;
+              margin-left: 10px;
+              margin-bottom: 15px;
+
             }
           }
           @media screen and (max-width: $screenMedium) {

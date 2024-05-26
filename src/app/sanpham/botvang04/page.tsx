@@ -67,13 +67,7 @@ export default function SanPham() {
 
                   {/* Nội dung chính sản phẩm */}
                   <div className={styleDetailProduct.productContentDetail}>
-                    <h3>Tiêu Chuẩn</h3>
-                    <p>
-                      Al<sub>2</sub>o<sub>3</sub> : 16.8%{" "}
-                    </p>
-                    <p>
-                      Fe<sub>2</sub>o<sub>3</sub> : 3.8%{" "}
-                    </p>
+                    <h3>Ứng Dụng</h3>
                     <p>1. Bột cao lanh vàng loại 1 (V01)</p>
                     <p>• Cao su, hóa chất, vật liệu chịu nhiệt</p>
                     <p>2. Bột cao lanh vàng loại 2 (V02)</p>
@@ -83,11 +77,18 @@ export default function SanPham() {
                     </p>
                     <p>3. Bột cao lanh vàng loại 3 (V03)</p>
                     <p>
-                      • Hóa chất, Phân bón, xử lý môi trường, thức ăn chăn nuôi
+                      •  Phân bón, thức ăn chăn nuôi
                     </p>
                     <p>4. Bột cao lanh vàng loại 4 (V04)</p>
                     <p>
-                      • Hóa chất, Phân bón, xử lý môi trường, thức ăn chăn nuôi
+                      •  Phân bón, thức ăn chăn nuôi
+                    </p>
+                    <h3>Tiêu Chuẩn</h3>
+                    <p>
+                      Al<sub>2</sub>o<sub>3</sub> : 16.8%{" "}
+                    </p>
+                    <p>
+                      Fe<sub>2</sub>o<sub>3</sub> : 3.8%{" "}
                     </p>
                     <br />
                     <p>

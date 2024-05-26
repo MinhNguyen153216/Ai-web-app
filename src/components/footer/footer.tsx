@@ -79,7 +79,7 @@ export default function Footer() {
             <div
               className={`${styleFooter.footerItem} ${styleFooter.grow} ${styleFooter.footerMap}`}
             >
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31308.167232002117!2d106.5746432!3d11.22304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174ca9ef230deed%3A0x2586c48655cd1ba!2zQ2jhu6MgTG9uZyBOZ3V5w6pu!5e0!3m2!1sen!2s!4v1714674864358!5m2!1sen!2s"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.2739435973253!2d106.83993681134626!3d11.092949253228525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174c3d86d7dc2ad%3A0x736d06e31b0619!2zRE5UTiBLUyBQaMaw4bubYyBOaMOibg!5e0!3m2!1svi!2s!4v1716756124323!5m2!1svi!2s"></iframe>
             </div>
           </section>
 

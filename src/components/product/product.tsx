@@ -166,16 +166,16 @@ function ProductItem(props: any): any {
 }
 
 export default function Product() {
-  const [chooseType, setChooseType] = useState(0);
-  const [chooseMenu, setChooseMenu] = useState(0);
+  // const [chooseType, setChooseType] = useState(0);
+  // const [chooseMenu, setChooseMenu] = useState(0);
 
-  function handleClickProductType(num: number) {
-    setChooseType((chooseType) => num);
-  }
+  // function handleClickProductType(num: number) {
+  //   setChooseType((chooseType) => num);
+  // }
 
-  function handleClickMenuProduct(num: number) {
-    setChooseMenu((chooseMenu) => num);
-  }
+  // function handleClickMenuProduct(num: number) {
+  //   setChooseMenu((chooseMenu) => num);
+  // }
 
   function ItemType(): any {
     switch (chooseType) {
@@ -246,10 +246,7 @@ export default function Product() {
           <h1>
             <Link
               href="/sanpham"
-              onClick={() => {
-                handleClickProductType(0);
-                handleClickMenuProduct(0);
-              }}
+              
             >
               SẢN PHẨM
             </Link>
@@ -262,17 +259,15 @@ export default function Product() {
             <div className={styleProduct.menuTotal}>
               <div
                 className={styleProduct.menuDetail}
-                onClick={() => {
-                  handleClickProductType(0);
-                  handleClickMenuProduct(0);
-                }}
+              
               >
                 <h2>Tất cả</h2>
               </div>
             </div>
 
             {/* specific */}
-            <div className={styleProduct.menuSpecific}>
+            {/* menuSpecific > menuDetail  */}
+            {/* <div className={styleProduct.menuSpecific}>
               <div
                 className={
                   styleProduct.menuDetail +
@@ -338,7 +333,7 @@ export default function Product() {
               >
                 <p>Cát</p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* list items */}

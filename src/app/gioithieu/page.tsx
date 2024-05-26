@@ -15,8 +15,7 @@ export default function GioiThieu() {
         <div className={`globalContainer ${styleGioiThieu.introduceContainer}`}>
           <div className={styleGioiThieu.content}>
             <p>
-              &ensp;&ensp;&ensp;Trước tiên, tôi xin thay mặt Ban TGĐ cùng toàn
-              thể CBNV của Công ty Cổ phần Khoáng sản Phước nhân (KSPN) xin bày
+              &ensp;&ensp;&ensp;Trước tiên, Doanh Nghiệp Tư Nhân Khoáng sản Phước nhân (KSPN) xin bày
               tỏ lòng tri ân, cảm kích sâu sắc đến toàn thể{" "}
               <span>quý vị, quý Khách hàng, Đối tác</span> đã luôn đồng hành
               cùng KSPN trên suốt chặng đường phát triển qua. <br></br>

@@ -48,8 +48,8 @@ export default function SanPham() {
                 <div className={styleDetailProduct.productImg}>
                   <Image
                     src="/img/vang04.png"
-                    width={340}
-                    height={340}
+                    width={100000}
+                    height={100000}
                     alt="picture"
                     quality={100}
                   />
@@ -68,18 +68,6 @@ export default function SanPham() {
                   {/* Nội dung chính sản phẩm */}
                   <div className={styleDetailProduct.productContentDetail}>
                     <h3>Ứng Dụng</h3>
-                    <p>1. Bột cao lanh vàng loại 1 (V01)</p>
-                    <p>• Cao su, hóa chất, vật liệu chịu nhiệt</p>
-                    <p>2. Bột cao lanh vàng loại 2 (V02)</p>
-                    <p>
-                      • Hóa chất, Phân bón, xử lý môi trường, thức ăn chăn nuôi,
-                      vật liệu chịu nhiệt
-                    </p>
-                    <p>3. Bột cao lanh vàng loại 3 (V03)</p>
-                    <p>
-                      •  Phân bón, thức ăn chăn nuôi
-                    </p>
-                    <p>4. Bột cao lanh vàng loại 4 (V04)</p>
                     <p>
                       •  Phân bón, thức ăn chăn nuôi
                     </p>

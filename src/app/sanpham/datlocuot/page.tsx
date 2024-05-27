@@ -38,16 +38,16 @@ export default function SanPham() {
 
             {/* Tên sản phẩm */}
             <div className={styleDetailProduct.productName}>
-              <p>Cát Mịn</p>
+              <p>Cao Lanh Lọc</p>
             </div>
 
             <div className={styleDetailProduct.productItem}>
               {/* Trái (ảnh) */}
               <div className={styleDetailProduct.MainLeft}>
                 {/* Ảnh sản phẩm */}
-                <div className={styleDetailProduct.productImg} style={{marginBottom: '20px'}}>
+                <div className={styleDetailProduct.productImg}>
                   <Image
-                    src="/img/catmin.png"
+                    src="/img/caolanhlocuot.png"
                     width={100000}
                     height={100000}
                     alt="picture"
@@ -67,10 +67,26 @@ export default function SanPham() {
 
                   {/* Nội dung chính sản phẩm */}
                   <div className={styleDetailProduct.productContentDetail}>
-                    <p>Cỡ hạt &lt; 1mm</p>
-                    
+                    <h3>Ứng dụng</h3>
+                    <p>• Ứng dụng ngành sản xuất gốm sứ gạch men</p>
+                    <h3 style={{ fontWeight: "bold" }}>Loại cao lanh:</h3>
+                    <p>Bột cao lanh lọc siêu mịn 1 (SML01)</p>
+                    <p>Bột cao lanh lọc siêu mịn 2 (SML02)</p>
+
+                    <h3>Tiêu Chuẩn</h3>
+                    <p>
+                      Al<sub>2</sub>o<sub>3</sub> : 22.5%{" "}
+                    </p>
+                    <p>
+                      Fe<sub>2</sub>o<sub>3</sub> : 1.62%{" "}
+                    </p>
                     <br />
-                    
+                    <p>
+                      Kết quả thử nghiệm:{" "}
+                      <a href="/img/datloc.pdf" target="_blank">
+                        Xem tại đây
+                      </a>
+                    </p>
                     {/* Giá sản phẩm */}
                     <div
                       className={`${styleDetailProduct.productPrice} ${styleDetailProduct.animated} ${styleDetailProduct.shake}`}

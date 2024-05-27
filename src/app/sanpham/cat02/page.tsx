@@ -48,8 +48,8 @@ export default function SanPham() {
                 <div className={styleDetailProduct.productImg} style={{marginBottom: '20px'}}>
                   <Image
                     src="/img/catto.png"
-                    width={340}
-                    height={340}
+                    width={100000}
+                    height={100000}
                     alt="picture"
                     quality={100}
                   />

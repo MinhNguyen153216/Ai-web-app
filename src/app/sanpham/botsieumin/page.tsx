@@ -50,8 +50,8 @@ export default function SanPham() {
                 <div className={styleDetailProduct.productImg}>
                   <Image
                     src="/img/botcaolanhsieumintrang.png"
-                    width={340}
-                    height={340}
+                    width={10000}
+                    height={10000}
                     alt="picture"
                     quality={100}
                   />

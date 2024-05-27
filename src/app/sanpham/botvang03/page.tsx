@@ -38,16 +38,16 @@ export default function SanPham() {
 
             {/* Tên sản phẩm */}
             <div className={styleDetailProduct.productName}>
-              <p>Cát Mịn</p>
+              <p>Bột Vàng 04</p>
             </div>
 
             <div className={styleDetailProduct.productItem}>
               {/* Trái (ảnh) */}
               <div className={styleDetailProduct.MainLeft}>
                 {/* Ảnh sản phẩm */}
-                <div className={styleDetailProduct.productImg} style={{marginBottom: '20px'}}>
+                <div className={styleDetailProduct.productImg}>
                   <Image
-                    src="/img/catmin.png"
+                    src="/img/botcaolanhsmvang.png"
                     width={100000}
                     height={100000}
                     alt="picture"
@@ -67,10 +67,24 @@ export default function SanPham() {
 
                   {/* Nội dung chính sản phẩm */}
                   <div className={styleDetailProduct.productContentDetail}>
-                    <p>Cỡ hạt &lt; 1mm</p>
-                    
+                    <h3>Ứng Dụng</h3>
+                    <p>
+                      •  Phân bón, thức ăn chăn nuôi
+                    </p>
+                    <h3>Tiêu Chuẩn</h3>
+                    <p>
+                      Al<sub>2</sub>o<sub>3</sub> : 16.8%{" "}
+                    </p>
+                    <p>
+                      Fe<sub>2</sub>o<sub>3</sub> : 3.8%{" "}
+                    </p>
                     <br />
-                    
+                    <p>
+                      Kết quả thử nghiệm:{" "}
+                      <a href="/img/datvang.pdf" target="_blank">
+                        Xem tại đây
+                      </a>
+                    </p>
                     {/* Giá sản phẩm */}
                     <div
                       className={`${styleDetailProduct.productPrice} ${styleDetailProduct.animated} ${styleDetailProduct.shake}`}

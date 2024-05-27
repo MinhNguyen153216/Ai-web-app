@@ -48,8 +48,8 @@ export default function SanPham() {
                 <div className={styleDetailProduct.productImg}>
                   <Image
                     src="/img/botcaolanhloc.png"
-                    width={340}
-                    height={340}
+                    width={100000}
+                    height={100000}
                     alt="picture"
                     quality={100}
                   />
@@ -74,7 +74,7 @@ export default function SanPham() {
                     <p>Bột cao lanh lọc siêu mịn 2 (SML02)</p>
                     <p>Đất lọc khô</p>
                     <p>• Ứng dụng ngành sản xuất gốm sứ gạch men</p>
-                    <p>Cao lanh lọc ướt (</p>
+                    <p>Cao lanh lọc ướt </p>
                     <p>• Ứng dụng ngành sản xuất gốm sứ gạch men</p>
                     <h3>Tiêu Chuẩn</h3>
                     <p>

@@ -50,8 +50,8 @@ export default function SanPham() {
                 <div className={styleDetailProduct.productImg}>
                   <Image
                     src="/img/botthocaolanh02.png"
-                    width={240}
-                    height={300}
+                    width={100000}
+                    height={100000}
                     alt="picture"
                     quality={100}
                   />
@@ -69,17 +69,14 @@ export default function SanPham() {
 
                   {/* Nội dung chính sản phẩm */}
                   <div className={styleDetailProduct.productContentDetail}>
-                    <p>
-                      Ứng dụng ngành sản xuất Hóa Chất, Phân Bón, Thuốc Trừ Sâu,
-                      Thuốc Bảo Vệ Thực Vật, Xử Lý Môi Trường, Thức Ăn Chăn Nuôi
+                  <p>
+                    •	Ứng dụng ngành sản xuất Phân bón, xử lý môi trường
                     </p>
-                   
+                 
                     <br />
                     <h3 style={{ fontWeight: "bold" }}>Loại cao lanh:</h3>
-                    <p>Bột cao lanh lọc siêu mịn 1 (SML01)</p>
-                    <p>Bột cao lanh lọc siêu mịn 2 (SML02)</p>
-                    <p>Cao lanh lọc khô</p>
-                    <p>Cao lanh lọc ướt</p>
+                    <p>Bột cao lanh thô loại 1 (SML01)</p>
+                    <p>Bột cao lanh thô loại 2 (SML02)</p>
                     <br />
                     <p>
                       Kết quả thử nghiệm:{" "}

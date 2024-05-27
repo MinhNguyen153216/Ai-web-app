@@ -38,7 +38,7 @@ export default function SanPham() {
 
             {/* Tên sản phẩm */}
             <div className={styleDetailProduct.productName}>
-              <p>Bột Cao Lanh Vàng</p>
+              <p>Cao Lanh Lọc</p>
             </div>
 
             <div className={styleDetailProduct.productItem}>
@@ -47,9 +47,9 @@ export default function SanPham() {
                 {/* Ảnh sản phẩm */}
                 <div className={styleDetailProduct.productImg}>
                   <Image
-                    src="/img/botcaolanhsmvang.png"
-                    width={340}
-                    height={340}
+                    src="/img/caolanhlockho.png"
+                    width={100000}
+                    height={100000}
                     alt="picture"
                     quality={100}
                   />
@@ -67,34 +67,23 @@ export default function SanPham() {
 
                   {/* Nội dung chính sản phẩm */}
                   <div className={styleDetailProduct.productContentDetail}>
-                    <h3>Ứng Dụng</h3>
-                    <p>1. Bột cao lanh vàng loại 1 (V01)</p>
-                    <p>• Cao su, hóa chất, vật liệu chịu nhiệt</p>
-                    <p>2. Bột cao lanh vàng loại 2 (V02)</p>
-                    <p>
-                      • Hóa chất, Phân bón, xử lý môi trường, thức ăn chăn nuôi,
-                      vật liệu chịu nhiệt
-                    </p>
-                    <p>3. Bột cao lanh vàng loại 3 (V03)</p>
-                    <p>
-                      • Phân bón,thức ăn chăn nuôi
-                    </p>
-                    <p>4. Bột cao lanh vàng loại 4 (V04)</p>
-                    <p>
-                      • Phân bón, thức ăn chăn nuôi
-                    </p>
+                    <h3>Ứng dụng</h3>
+                    <p>• Ứng dụng ngành sản xuất gốm sứ gạch men</p>
+                    <h3 style={{ fontWeight: "bold" }}>Loại cao lanh:</h3>
+                    <p>Bột cao lanh lọc siêu mịn 1 (SML01)</p>
+                    <p>Bột cao lanh lọc siêu mịn 2 (SML02)</p>
+
                     <h3>Tiêu Chuẩn</h3>
                     <p>
-                      Al<sub>2</sub>o<sub>3</sub> : 16.8%{" "}
+                      Al<sub>2</sub>o<sub>3</sub> : 22.5%{" "}
                     </p>
                     <p>
-                      Fe<sub>2</sub>o<sub>3</sub> : 3.8%{" "}
+                      Fe<sub>2</sub>o<sub>3</sub> : 1.62%{" "}
                     </p>
                     <br />
-
                     <p>
                       Kết quả thử nghiệm:{" "}
-                      <a href="/img/datvang.pdf" target="_blank">
+                      <a href="/img/datloc.pdf" target="_blank">
                         Xem tại đây
                       </a>
                     </p>

@@ -4,7 +4,7 @@ import styleProduct from "../../assets/style/product.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-// Cao lanh lọc
+// Cao lanh siêu mịn
 const items1 = [
   {
     detailURL: "/sanpham/botsieumin",
@@ -15,7 +15,7 @@ const items1 = [
   },
 ];
 
-// Cao lanh siêu mịn
+// Cao lanh thô
 const items2 = [
   {
     detailURL: "/sanpham/bottho1",
@@ -33,31 +33,59 @@ const items2 = [
   },
 ];
 
-// Cao lanh thô
+// Cao lanh vàng
 const items3 = [
   {
-    detailURL: "/sanpham/botvangsm",
+    detailURL: "/sanpham/botvang01",
     imgURL: "/img/botcaolanhsmvang.png",
     imgALT: "alt of the img",
-    itemName: "BỘT CAO LANH SM VÀNG",
+    itemName: "BỘT CAO LANH VÀNG 1",
+    itemPrice: "LIÊN HỆ",
+  },
+  {
+    detailURL: "/sanpham/botvang02",
+    imgURL: "/img/botcaolanhsmvang.png",
+    imgALT: "alt of the img",
+    itemName: "BỘT CAO LANH VÀNG 2",
+    itemPrice: "LIÊN HỆ",
+  },
+  {
+    detailURL: "/sanpham/botvang03",
+    imgURL: "/img/botcaolanhsmvang.png",
+    imgALT: "alt of the img",
+    itemName: "BỘT CAO LANH VÀNG 3",
     itemPrice: "LIÊN HỆ",
   },
   {
     detailURL: "/sanpham/botvang04",
     imgURL: "/img/vang04.png",
     imgALT: "alt of the img",
-    itemName: "VÀNG 04",
+    itemName: "BỘT CAO LANH VÀNG 4",
     itemPrice: "LIÊN HỆ",
   },
 ];
 
-// Cao lanh vàng
+// Cao lanh lọc
 const items4 = [
   {
     detailURL: "/sanpham/datloc",
     imgURL: "/img/botcaolanhloc.png",
     imgALT: "alt of the img",
     itemName: "BỘT CAO LANH LỌC",
+    itemPrice: "LIÊN HỆ",
+  },
+  {
+    detailURL: "/sanpham/datlockho",
+    imgURL: "/img/caolanhlockho.png",
+    imgALT: "alt of the img",
+    itemName: "CAO LANH LỌC KHÔ",
+    itemPrice: "LIÊN HỆ",
+  },
+  {
+    detailURL: "/sanpham/datlocuot",
+    imgURL: "/img/caolanhlocuot.png",
+    imgALT: "alt of the img",
+    itemName: "CAO LANH LỌC ƯỚT",
     itemPrice: "LIÊN HỆ",
   },
 ];
@@ -114,8 +142,8 @@ export default function Product() {
     return (
       <>
         {/* Menu Section */}
-        <div>
-          <h2>Mô Tả</h2>
+        <div className={styleProduct.menuTitle}>
+          <h2>{props.itemMenu}</h2>
         </div>
 
         {/* Items */}
@@ -139,16 +167,16 @@ export default function Product() {
         <div className={`globalContainer ${styleProduct.productDetail}`}>
           {/* item */}
           {/* Cao lanh lọc */}
-          <ItemType itemType={items1} itemMenu="Cao lanh lọc" />
+          <ItemType itemType={items1} itemMenu="Cao lanh siêu mịn" />
 
           {/* Cao lanh siêu mịn */}
-          <ItemType itemType={items2} itemMenu="Cao lanh siêu mịn" />
+          <ItemType itemType={items2} itemMenu="Cao lanh thô" />
 
           {/* Cao lanh thô */}
-          <ItemType itemType={items3} itemMenu="Cao lanh thô" />
+          <ItemType itemType={items3} itemMenu="Cao lanh vàng" />
 
           {/* Cao lanh vàng */}
-          <ItemType itemType={items4} itemMenu="Cao lanh vàng" />
+          <ItemType itemType={items4} itemMenu="Cao lanh lọc" />
 
           {/* Cát */}
           <ItemType itemType={items5} itemMenu="Cát" />

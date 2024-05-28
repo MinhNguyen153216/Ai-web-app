@@ -41,7 +41,7 @@
           h5,
           h1 {
             color: var(--color-mainRed);
-            cursor: pointer;
+            // cursor: pointer;
             @media screen and (max-width: $screenSmall) {
               line-height: 1.7;
             }
@@ -61,7 +61,7 @@
             color: black;
             font-style: oblique;
             font-weight: bold;
-            cursor: pointer;
+            // cursor: pointer;
           }
           .phone:hover,
           .email:hover {

@@ -125,7 +125,9 @@ function ProductItem(props: any): any {
             <h3>{props.item.itemName}</h3>
           </div>
           <div className={styleProduct.productPrice}>
-            <p>GIÁ: {props.item.itemPrice}</p>
+            <a href="tel:0908310833">
+              <p>GIÁ: {props.item.itemPrice}</p>
+            </a>
           </div>
         </div>
       </Link>

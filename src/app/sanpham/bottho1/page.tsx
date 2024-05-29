@@ -38,7 +38,7 @@ export default function SanPham() {
 
             {/* Tên sản phẩm */}
             <div className={styleDetailProduct.productName}>
-              <p>Bột Thô Cao Lanh </p>
+              <p>Bột Cao Lanh Thô 1</p>
             </div>
 
             <div className={styleDetailProduct.productItem}>
@@ -72,13 +72,16 @@ export default function SanPham() {
                   {/* Nội dung chính sản phẩm */}
                   <div className={styleDetailProduct.productContentDetail}>
                     <p>
-                    •	Ứng dụng ngành sản xuất Phân bón, xử lý môi trường
+                    •	Ứng dụng ngành sản xuất Phân bón
                     </p>
                  
                     <br />
-                    <h3 style={{ fontWeight: "bold" }}>Loại cao lanh:</h3>
-                    <p>Bột cao lanh thô loại 1 (SML01)</p>
-                    <p>Bột cao lanh thô loại 2 (SML02)</p>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                     <br />
                     <p>
                       {/* Kết quả thử nghiệm:{" "}

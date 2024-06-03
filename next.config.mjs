@@ -16,4 +16,4 @@ const nextConfig = {
 };
 
 export default nextConfig;
-// commit 03/06/2024
+// commit delete output:"export" 3/6/2024

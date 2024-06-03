@@ -118,19 +118,12 @@ export default function Header() {
           {/*---company icon---*/}
           <div className={styleHeader.icon}>
             <Link href="/">
-<<<<<<< HEAD
-              <Image
-=======
               <img
->>>>>>> a1774de11f23c09cf67fe692eec7282f6ba6c2ce
                 src="/img/Menu-icon.png"
                 width={85}
                 height={85}
                 alt="Logo"
-<<<<<<< HEAD
-=======
                 // unoptimized
->>>>>>> a1774de11f23c09cf67fe692eec7282f6ba6c2ce
               />
             </Link>
             <div className={styleHeader.companyName}>

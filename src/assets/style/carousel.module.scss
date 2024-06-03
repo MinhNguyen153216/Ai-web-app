@@ -1,0 +1,20 @@
+@import "./mediaScreen.scss";
+
+.imgCarousel {
+  border-radius: 8px;
+  @media screen and (max-width: $screenMedium) {
+    border-radius: 0;
+  }
+  @media screen and (max-width: $screenSmall) {
+    border-radius: 0;
+  }
+}
+.Paper {
+  box-shadow: none !important;
+}
+.mui-1m9128y{
+  margin-top: 0px !important;
+}
+.Button{
+  margin: 0px !important;
+}

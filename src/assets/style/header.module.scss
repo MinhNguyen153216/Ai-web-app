@@ -1,0 +1,257 @@
+@import "./mediaScreen.scss";
+.header {
+  .headerContainer {
+    max-height: 100px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    .icon {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      a {
+        display: inline-block;
+        height: 85px;
+      }
+      .companyName {
+        color: rgb(195, 0, 0);
+        h1 {
+          font-size: 30px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: $screenMedium) {
+        flex-direction: row-reverse;
+        a {
+          img {
+            width: 85px;
+            height: 85px;
+          }
+        }
+        .companyName {
+          text-align: right;
+          h1 {
+            font-size: 27px;
+          }
+          h3 {
+            font-size: 15px;
+          }
+        }
+      }
+      @media screen and (max-width: $screenSmall) {
+        justify-content: right;
+        transform: translateX(10px);
+        a {
+          height: 75px;
+          img {
+            width: 75px;
+            height: 75px;
+          }
+        }
+        .companyName {
+          margin-right: -10px;
+          text-align: right;
+          h1 {
+            font-size: 22px;
+          }
+          h3 {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .menu {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      margin-right: 18px;
+      .menuPart {
+        margin: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+        color: black;
+        background: linear-gradient(
+          180deg,
+          white 0%,
+          white 50%,
+          white 85%,
+          rgb(195, 0, 0) 100%
+        );
+        background-size: 100% 200%;
+        background-position: 0% 0%;
+        p {
+          margin-left: 5px;
+          font-weight: 700;
+        }
+      }
+      .menuPart:hover {
+        scale: 1.15;
+        transition: all 0.5s ease;
+        text-decoration: underline;
+        color: #ffffff;
+        background: linear-gradient(
+          180deg,
+          rgb(195, 0, 0) 0%,
+          rgb(195, 0, 0) 50%,
+          rgb(195, 0, 0) 85%,
+          rgb(195, 0, 0) 100%
+        );
+        // background: red;
+      }
+      @media screen and (max-width: $screenMedium) {
+        display: none;
+      }
+      @media screen and (max-width: $screenSmall) {
+        display: none;
+      }
+    }
+    .smallMenu {
+      display: none;
+      position: relative;
+      margin-left: 10px;
+      z-index: 2;
+      cursor: pointer;
+      svg {
+        border-radius: 5px;
+        background-color: rgb(212, 212, 212);
+      }
+      @media screen and (max-width: $screenMedium) {
+        display: block;
+      }
+      @media screen and (max-width: $screenSmall) {
+        display: block;
+      }
+    }
+    .listMenuSmall {
+      display: none;
+      padding-top: 10vh;
+      a {
+        .menuPart {
+          margin: 15px;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          border-radius: 5px;
+          transition: all 0.5s ease;
+          color: black;
+          background: linear-gradient(
+            180deg,
+            white 0%,
+            white 50%,
+            white 85%,
+            rgb(195, 0, 0) 100%
+          );
+          background-size: 100% 200%;
+          background-position: 0% 0%;
+          p {
+            margin-left: 5px;
+            font-weight: 700;
+          }
+        }
+        .menuPart:hover {
+          transition: all 0.5s ease;
+          text-decoration: underline;
+          color: #ffffff;
+          background: linear-gradient(
+            180deg,
+            rgb(195, 0, 0) 0%,
+            rgb(195, 0, 0) 50%,
+            rgb(195, 0, 0) 85%,
+            rgb(195, 0, 0) 100%
+          );
+          // background: red;
+        }
+      }
+      @media screen and (max-width: $screenMedium) {
+        display: block;
+        background-color: rgba(190, 188, 188, 0.728);
+        backdrop-filter: blur(5px);
+
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        a {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: $screenSmall) {
+        display: block;
+        backdrop-filter: blur(5px);
+        background-color: rgba(190, 188, 188, 0.728);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        a {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+    }
+  
+  }
+  .end {
+    background: rgb(195, 0, 0);
+    height: 2px;
+    border: none;
+    
+  }
+
+  @media screen and (max-width: $screenMedium) {
+    position: sticky;
+    top: 0px;
+    position: -webkit-sticky;
+    z-index: 1;
+    background-color: #fff;
+    padding-top: 10px;
+  }
+  @media screen and (max-width: $screenSmall) {
+    position: sticky;
+    top: 0px;
+    position: -webkit-sticky;
+    z-index: 1;
+    background-color: #fff;
+   padding: 0px 10px 0 10px;
+  }
+}
+.clickedPage {
+  background-position: 0% 90% !important;
+}
+.animationMenu1 {
+  animation: smallMenuAnimation 0.5s 1;
+}
+.animationMenu2 {
+  animation: smallMenuAnimation 1s 1;
+}
+.animationMenu3 {
+  animation: smallMenuAnimation 1.5s 1;
+}
+.animationMenu4 {
+  animation: smallMenuAnimation 1.8s 1;
+}
+@keyframes smallMenuAnimation {
+  from {
+    transform: translateX(-100vh);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

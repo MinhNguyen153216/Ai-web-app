@@ -1,0 +1,204 @@
+@import "./mediaScreen.scss";
+.footer {
+  .end {
+    background: var(--color-mainRed);
+    height: 3px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  .footerContainer {
+    // footer Chính
+    .Footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      .footerItem {
+        padding: 5px 15px;
+
+        // cursor: pointer;
+        p,
+        a {
+          line-height: 2;
+          color: black;
+        }
+        a:hover {
+          color: red;
+        }
+        .footerTitle {
+          margin-bottom: 15px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          @media screen and (max-width: $screenMedium) {
+            text-align: center;
+            font-size: 18px;
+          }
+          @media screen and (max-width: $screenSmall) {
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 8px;
+          }
+        }
+        .fastlinkDetail {
+          li {
+            a {
+              color: black;
+              position: relative;
+            }
+            a:after {
+              content: "";
+              position: absolute;
+              background-color: var(--color-mainRed);
+              height: 3px;
+              width: 0%;
+              left: 0;
+              bottom: -5px;
+              transition: 0.3s;
+            }
+            a:hover:after {
+              width: 100%;
+            }
+            a:hover {
+              color: orangered;
+            }
+          }
+          @media screen and (max-width: $screenExtraSmall) {
+            line-height: 3;
+          }
+        }
+        @media screen and (max-width: $screenMedium) {
+          font-size: 16px;
+        }
+        @media screen and (max-width: $screenSmall) {
+          font-size: 11px;
+        }
+      }
+      .footerAddress {
+        width: 25%;
+        @media screen and (max-width: $screenMedium) {
+          order: 3;
+          width: 50%;
+          padding-left: 20px;
+        }
+        @media screen and (max-width: $screenSmall) {
+          // margin-top: 10px;
+        }
+      }
+      .footerLink {
+        width: 25%;
+        @media screen and (max-width: $screenMedium) {
+          order: 2;
+          width: 50%;
+          text-align: center;
+        }
+      }
+      .footerMap {
+        width: 40%;
+        @media screen and (max-width: $screenMedium) {
+          order: 1;
+          width: 100%;
+        }
+      }
+      .grow {
+        margin-right: 20px;
+        iframe {
+          width: 100%;
+          height: 180px;
+          border: none !important;
+          @media screen and (max-width: $screenMedium) {
+            height: 350px;
+          }
+        }
+        @media screen and (max-width: $screenMedium) {
+          margin-right: 0px;
+        }
+      }
+      @media screen and (max-width: $screenMedium) {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        // justify-content: center;
+        padding-bottom: 5px;
+        margin-top: 10px;
+      }
+    }
+
+    //   Footer phụ
+    .footerDesign {
+      max-width: 1150px;
+      margin: 0 auto;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid black;
+      align-items: center;
+      // padding-right: 20px;
+      margin-left: 14px;
+      padding-bottom: 7px;
+      .leftDesign {
+        span {
+          font-weight: bold;
+          @media screen and (max-width: $screenSmall) {
+            display: inline-block;
+          }
+        }
+        .leftIcon {
+          position: relative;
+          top: 5px;
+          @media screen and (max-width: $screenSmall) {
+            top: 7px;
+          }
+        }
+        @media screen and (max-width: $screenSmall) {
+          padding-right: 50px;
+        }
+        @media screen and (max-width: $screenMedium) {
+          padding-bottom: 8px;
+        }
+      }
+      .rightDesign {
+        // margin-top: 8px;
+        line-height: 16px;
+        padding-top: 8px;
+        span {
+          font-weight: bold;
+          @media screen and (max-width: $screenSmall) {
+            // display: inline-block;
+          }
+        }
+        a {
+          color: black;
+        }
+        a:hover {
+          color: red;
+        }
+        @media screen and (max-width: $screenMedium) {
+          padding-top: 2px;
+        }
+        @media screen and (max-width: $screenSmall) {
+          padding-right: 20px;
+          padding-top: 8px;
+          line-height: 1.3;
+        }
+      }
+
+      p {
+        @media screen and (max-width: $screenSmall) {
+          font-size: 11px;
+        }
+      }
+      @media screen and (max-width: $screenSmall) {
+        font-size: 11px;
+        text-align: center;
+      }
+      @media screen and (max-width: $screenMedium) {
+        margin: 0 20px;
+        font-size: 14px;
+        padding-bottom: 3px;
+      }
+    }
+  }
+  @media screen and (max-width: $screenMedium) {
+    display: block;
+  }
+  @media screen and (max-width: $screenSmall) {
+    display: block;
+  }
+}

@@ -1,0 +1,268 @@
+// @import "./mediaScreen.scss";
+
+// .Product {
+//   background-color: #ebebeb;
+//   padding-top: 15px;
+//   .productTitle {
+//     h1 {
+//       text-align: center;
+//       margin-bottom: 15px;
+//       margin-top: 10px;
+//       a {
+//         color: black;
+//         position: relative;
+//         padding: 0 10px;
+//       }
+//       a:after {
+//         content: "";
+//         position: absolute;
+//         background-color: var(--color-mainRed);
+//         height: 3px;
+//         width: 100%;
+//         left: 0;
+//         bottom: -5px;
+//       }
+//     }
+//   }
+
+//   .productDetail {
+//     .productMenu {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       flex-wrap: wrap;
+//       margin: 5px 15px 0px 15px;
+//       padding-bottom: 10px;
+//       border-bottom: 2px solid var(--color-mainRed);
+//       position: relative;
+//       &:before {
+//         content: "";
+//         position: absolute;
+//         bottom: -13.5px;
+//         left: -15px;
+//         width: 17px;
+//         height: 12px;
+//         border-top: 2px solid var(--color-mainRed);
+//         border-left: 2px solid var(--color-mainRed);
+//         border-top-left-radius: 100%;
+//       }
+//       &:after {
+//         content: "";
+//         position: absolute;
+//         bottom: -13.5px;
+//         right: -15px;
+//         width: 17px;
+//         height: 12px;
+//         border-top: 2px solid var(--color-mainRed);
+//         border-right: 2px solid var(--color-mainRed);
+//         border-top-right-radius: 100%;
+//       }
+//       // total
+//       .menuTotal {
+//         .menuDetail {
+//           text-align: center;
+//           margin: 0 10px;
+//           white-space: nowrap;
+//           h2 {
+//             cursor: pointer;
+//             &:hover {
+//               color: var(--color-mainRed);
+//               transition: 0.3s;
+//             }
+//             @media screen and (max-width: $screenSmall) {
+//               display: none;
+//             }
+//             @media screen and (max-width: $screenMediumLarge) {
+//               display: none;
+//             }
+//           }
+//         }
+//       }
+
+//       // specific
+//       .menuSpecific {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         white-space: nowrap;
+//         .menuDetail {
+//           transition: 1s;
+//           text-align: center;
+//           margin: 10px 5px 0 5px;
+//           padding: 7px 10px;
+//           border: 1px solid black;
+//           border-radius: 5px;
+//           background-color: white;
+//           p {
+//             color: black;
+//             text-decoration: none;
+//             font-size: 18px;
+//             transition: 0.3s;
+//             cursor: pointer;
+//             font-family: "Open Sans", Sans-serif;
+//             letter-spacing: 0.8px;
+//             display: block;
+//             &:hover {
+//               cursor: pointer;
+//               color: red;
+//             }
+//             @media screen and (max-width: $screenMedium) {
+//               font-size: 16px;
+//             }
+//             @media screen and (max-width: $screenSmall) {
+//               font-size: 17px;
+//               width: 85px;
+//               letter-spacing: 0px;
+//             }
+//           }        
+//           @media screen and (max-width: $screenSmall) {
+//             margin: 5px 5px;
+//             min-height: 40px;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             padding: 0px;
+//             width: 24%;
+//             margin-top: 10px;
+//           }
+//         }
+//         @media screen and (max-width: $screenSmall) {
+//           width: 100%;
+//           white-space: wrap;
+//           // margin: 4px;
+//           padding-bottom: 0px;
+//           flex-wrap: wrap;
+          
+//         }
+//       }
+//       @media screen and (max-width: 550px) {
+//         justify-content: center;
+//       }
+//     }
+//     .productListItem {
+//       display: flex;
+//       align-items: center;
+//       flex-wrap: wrap;
+//       .productItem {
+//         width: 25%;
+//         margin: 20px 0px 35px 0;
+//         a {
+//           color: black;
+//         }
+//         .productImg {
+//           max-height: 250px;
+//           img {
+//             width: 94.5%;
+//             position: relative;
+//             left: 50%;
+//             transform: translateX(-50%);
+//             top: 7px;
+//             height: 280px;
+//             border-radius: 15px 15px 0px 0px;
+//             border-bottom: none;
+//             border: 1px solid var(--color-mainGray);
+//             @media screen and (max-width: $screenMedium) {
+//               height: 270px;
+//             }
+//             @media screen and (max-width: $screenSmall) {
+//               height: 200px;
+//             }
+//           }
+//         }
+//         .detailBorder {
+//           background-color: white;
+//           border: 1px solid var(--color-mainGray);
+//           margin: 0 auto;
+//           width: 94.5%;
+//           border-radius: 0px 0px 15px 15px;
+//           min-height: 130px;
+
+//           .productName {
+//             text-align: center;
+//             padding-top: 55px;
+//             @media screen and (max-width: $screenMedium) {
+//               font-size: 15px;
+//               // padding-top: 20px;
+//               padding: 20px 10px 0px 10px;
+//             }
+//             @media screen and (max-width: $screenSmall) {
+//               font-size: 12px;
+//               padding-top: 12px;
+//             }
+//           }
+//           .productPrice {
+//             margin-top: 10px;
+//             text-align: center;
+//             padding-bottom: 10px;
+//             @media screen and (max-width: $screenMedium) {
+//               font-size: 13px;
+//             }
+//             @media screen and (max-width: $screenSmall) {
+//               font-size: 10px;
+//             }
+//           }
+//           @media screen and (max-width: $screenMedium) {
+//             padding-top: 25px;
+//             min-height: 125px;
+//           }
+//           @media screen and (max-width: $screenSmall) {
+//             padding-top: 10px;
+//             min-height: 90px;
+//           }
+//         }
+//         @media screen and (max-width: $screenMedium) {
+//           width: 31.5%;
+//         }
+//         @media screen and (max-width: $screenSmall) {
+//           width: 45%;
+//           min-height: 260px;
+//           margin-bottom: 15px;
+//           margin-top: 10px;
+//         }
+//       }
+//       .productItem:hover {
+//         transform: scale(1.01);
+//         .detailBorder {
+//           border-radius: 0;
+//           border: 2px solid #535963;
+//         }
+//         .productImg > img {
+//           border-radius: 0;
+//           border: 2px solid #535963;
+//           border-bottom: none;
+//         }
+//       }
+//       @media screen and (max-width: $screenMedium) {
+//         align-items: flex-start;
+//         justify-content: space-evenly;
+
+//       }
+//       @media screen and (max-width: $screenSmall) {
+//         align-items: flex-start;
+//         justify-content: space-evenly;
+//       }
+//     }
+
+//     //stack overflow chỉ cách flex-start cho 2 sản phẩm cuối cùng canh đều
+//     .productListItem:after{
+//       content: "";
+//       flex: 0 0 32%;
+//     }
+//   }
+//   @media screen and (max-width: $screenMedium) {
+//     display: block;
+//   }
+
+//   @media screen and (max-width: $screenSmall) {
+//     display: block;
+//   }
+// }
+// .clickedMenu {
+//   background-color: var(--color-mainRed) !important;
+//   position: relative;
+//   transform: translateY(-10px) !important;
+//   box-shadow: 4px 4px 4px var(--color-mainGray);
+//   p {
+//     color: white !important;
+//   }
+// }

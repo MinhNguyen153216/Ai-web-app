@@ -1,0 +1,40 @@
+--đổi tên--
+bột cao lanh thô 1,2 -> bột cao lanh thô
+bột cao lanh siêu mịn vàng -> bột cao lanh vàng
+bột cao lanh sm vàng -> bột cao lanh vàng
+phần sản phẩm của "bột cao lanh lọc" -> cao lanh lọc
+cao lanh lọc khô -> đất lọc khô 
+cao lanh lọc ướt -> 
+
+
+xóa hết menu sản phẩm
+
+hàng 1 có hình bột cao lanh lọc, cao lanh lọc khô, cao lanh lọc ướt đưa lên đầu tiên,
+khi người xem chi tiết của bột cao lanh lọc này sẽ có hình của bột cao lanh lọc,
+cao lanh lọc khô và cao lanh lọc ướt.
+
+tiếp theo là bột cao lanh siêu mịn cùng hàng 2
+
+hàng 3 có hình bột cao lanh thô (1) hình bột cao lanh thô (2) không hiện ở đây
+hình bột cao lanh thô (2) sẽ hiện khi người dùng xem chi tiết của bột cao lanh thô [1] này
+
+nằm bên phải của thằng bột cao lanh thô là bột cao lanh vàng
+
+hàng số 4 có hình bột cao lanh vàng, hình bột cao lanh vàng 04 không hiện ở đây
+hình bột cao lanh vàng 04 sẽ hiện khi người dùng xem chi tiết của bột cao lanh vàng này
+
+hàng số 5 sẽ hiện hình của 2 sản phẩm cát mịn và cát to
+
+chỉnh sửa google map, dùng link của Ái đã gửi
+
+phần "cao lanh vàng" gồm 4 sản phẩm
+trong đó cột cao lanh vàng 01, 02, 03 dùng chung hình với nhau
+và dùng hình bột cao lanh siêu mịn vàng.
+bột cao lanh cao lanh vàng 04 dùng hình của "vàng 04"
+
+phần chi tiết sản phẩm:
+ở trên là "ứng dụng"
+ở dưới là "tiêu chuẩn"
+cuối cùng là "kết quả thử nghiệm"
+
+phần giới thiệu và chi tiết sản phẩm cần sửa lại nội dung (dựa theo hình Ái đã gửi trong Messenger)

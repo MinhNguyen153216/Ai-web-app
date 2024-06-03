@@ -1,0 +1,40 @@
+@import "./mediaScreen.scss";
+.homeContainer {
+  width: 95%;
+  max-width: 1500px;
+  margin: auto;
+  .Carousel {
+    position: relative;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: 500px;
+    }
+  }
+  // laptop
+  @media screen and (max-width: 1250px) {
+    width: 100%;
+  }
+  // ipad
+  @media screen and (max-width: $screenMedium) {
+    width: 100%;
+    .Carousel {
+      img {
+        height: 350px;
+      }
+    }
+  }
+  // phone
+  @media screen and (max-width: $screenSmall) {
+    width: 100%;
+    .Carousel {
+      img {
+        height: 250px;
+      }
+    }
+  }
+}
+.productContainer {
+  max-width: 100%;
+  background-color: #ebebeb;
+}

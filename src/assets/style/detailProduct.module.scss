@@ -1,0 +1,351 @@
+@import "./mediaScreen.scss";
+// @import "~animate.css/animate.css";
+.detailProduct {
+  background-color: #ebebeb;
+  .detailProductContainer {
+    max-height: 1300px;
+    // Ảnh, tên, giá sản phẩm
+    padding-top: 25px;
+    .detailProductTitle {
+      h1 {
+        text-align: center;
+        margin-bottom: 15px;
+        a {
+          color: black;
+          position: relative;
+          padding: 0 10px;
+        }
+        a:after {
+          content: "";
+          position: absolute;
+          background-color: var(--color-mainRed);
+          height: 2.5px;
+          width: 100%;
+          left: 0;
+          bottom: -5px;
+        }
+      }
+    }
+    .productMain {
+      width: 100%;
+      padding-left: 15px;
+      min-height: 579px;
+      .fastLink {
+        nav {
+          ul {
+            li {
+              display: inline-block;
+              padding: 0px 3px;
+              a {
+                color: rgb(51, 61, 136);
+              }
+            }
+            li:nth-child(1) {
+              padding-left: 0;
+              padding-right: 3px;
+            }
+            li a:hover {
+              color: red;
+              transition: 0.3s;
+            }
+          }
+        }
+        @media screen and (max-width: $screenSmall) {
+          margin-top: 25px;
+          font-size: 15px;
+        }
+      }
+      .productName {
+        margin-top: 10px;
+        p {
+          // font-family:'Roboto Mono', monospace;
+          // font-family:'Nunito', sans-serif;
+          // font-family: 'Noto Serif', serif;
+          // font-family: 'Saira', sans-serif;
+          font-family: "Roboto", sans-serif;
+          font-weight: 530;
+          font-size: 30px;
+          position: relative;
+          display: inline-block;
+          @media screen and (max-width: $screenSmall) {
+            font-size: 25px;
+          }
+        }
+        p:after {
+          content: "";
+          position: absolute;
+          background-color: var(--color-mainRed);
+          height: 2px;
+          width: 20%;
+          left: 0;
+          bottom: -5px;
+          display: inline-block;
+        }
+        // Border góc vuông trái
+
+        // p:after {
+        //   content: "";
+        //   position: absolute;
+        //   background-color: rgb(195, 0, 0);
+        //   height: 2px;
+        //   width: 10%;
+        //   left: -8px;
+        //   bottom: -5px;
+        //   display: inline-block;
+        // }
+        // p::before {
+        //   content: "";
+        //   position: absolute;
+        //   background-color: rgb(195, 0, 0);
+        //   width: 3px;
+        //   height: 70%;
+        //   left: 0;
+        //   top: 15px;
+        //   display: inline-block;
+        //   margin-left: -8px;
+
+        // }
+
+        // border: 1px solid #000;
+      }
+      .productItem {
+        display: flex;
+        .MainLeft {
+          margin-top: 20px;
+          width: 30%;
+          border-right: 1px solid var(--color-mainGray);
+          .productImg {
+            transition-duration: .5s;
+            img {
+              transition-duration: .5s;
+              width: 95%;
+              height: 100%;
+              @media screen and (max-width: $screenMedium) {
+                height: 80%;
+              }
+              @media screen and (max-width: $screenSmall) {
+                width: 100%;
+                height: 80%;
+              }
+            }
+            &:hover {
+              transform: scale(1.1);
+              box-shadow: 5px 5px 5px solid black;
+              // transform: translateY(20px);
+              margin-top: 17px;
+              @media screen and (max-width: $screenSmall) {
+                margin-left: 30px;
+              }
+            }
+            @media screen and (max-width: $screenSmall) {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-left: 10px;
+              margin-bottom: 15px;
+
+            }
+          }
+          @media screen and (max-width: $screenMedium) {
+            width: 45%;
+          }
+          @media screen and (max-width: $screenSmall) {
+            width: 90%;
+            border-right: none;
+          }
+        }
+        .MainRight {
+          width: 66%;
+          display: flex;
+          flex-direction: column;
+          // Chi tiết, mô tả sản phẩm
+          .productContent {
+            margin-top: 20px;
+            padding-left: 15px;
+            // min-height: 490px;
+            max-height: 800px;
+            width: 100%;
+            .productContentTitle {
+              display: block;
+              border-bottom: 2px solid var(--color-mainRed);
+              h2 {
+                font-size: 16px;
+                color: white;
+                display: inline-block;
+                position: relative;
+                padding: 12px 15px;
+                background-color: var(--color-mainRed);
+                border: 1px solid var(--color-mainRed);
+                border-radius: 6px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+              }
+              // h2:after {
+              //   content: "";
+              //   height: 2px;
+              //   width: 1000%;
+              //   // width: 100%;
+              //   left: 0px;
+              //   background-color: rgb(195, 0, 0);
+              //   background-color: blue;
+              //   position: absolute;
+              //   bottom: -1px;
+              //   // bottom: -5px;
+              // }
+            }
+            .productContentDetail {
+              margin-top: 10px;
+              p {
+                color: black;
+                line-height: 1.6;
+                @media screen and (max-width: $screenMedium) {
+                  font-size: 13px;
+                }
+              }
+              a {
+                color: rgb(52, 99, 231);
+              }
+              a:hover {
+                color: red;
+                transition: 0.3s;
+              }
+              h3 {
+                color: var(--color-mainRed);
+                margin-top: 5px;
+                @media screen and (max-width: $screenMedium) {
+                  font-size: 17px;
+                  margin-bottom: 5px;
+                }
+              }
+              .productPrice {
+                width: 100%;
+                p {
+                  font-family: "Roboto Mono", monospace;
+                  // font-family:'Roboto Mono', monospace;
+                  // font-family:'Nunito', sans-serif;
+                  // font-family: 'Noto Serif', serif;
+                  font-family: "Saira", sans-serif;
+                  margin-top: 30px;
+                  display: inline-block;
+                  padding-bottom: 40px;
+                  a {
+                    color: white;
+                    background-color: var(--color-mainRed);
+                    font-size: 25px;
+                    font-weight: bold;
+                    border: 1px solid var(--color-mainRed);
+                    display: inline-block;
+                    padding: 10px 120px;
+                    letter-spacing: 0.8px;
+                    border-radius: 6px;
+                    margin-left: 53px;
+                    margin-top: 10px;
+                    &:hover {
+                      background-color: #e3001aef;
+                      border-color: #e3001aef;
+                    }
+                    @media screen and (max-width: $screenMedium) {
+                      margin-left: 0px;
+                      padding: 10px 55px;
+                      font-size: 20px;
+                    }
+                    @media screen and (max-width: $screenSmall) {
+                      padding: 8px 60px;
+                      font-size: 20px;
+                      margin-top: -5px;
+                      // padding-bottom: 0;
+                    }
+                  }
+                  @media screen and (max-width: $screenSmall) {
+                    padding-bottom: 30px;
+                  }
+                }
+                @media screen and (max-width: $screenMedium) {
+                  text-align: center;
+                }
+              }
+            }
+            @media screen and (max-width: $screenSmall) {
+              padding-left: 0;
+            }
+          }
+
+          @media screen and (max-width: $screenMedium) {
+            width: 50%;
+            // margin: 0 auto;
+          }
+          @media screen and (max-width: $screenSmall) {
+            width: 95%;
+          }
+        }
+        @media screen and (max-width: $screenSmall) {
+          flex-direction: column;
+        }
+      }
+      @media screen and (max-width: $screenMedium) {
+        min-height: 500px;
+      }
+    }
+  }
+}
+@-webkit-keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-3px, 0, 0);
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(3px, 0, 0);
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}

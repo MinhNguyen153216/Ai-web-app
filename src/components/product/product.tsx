@@ -118,6 +118,7 @@ function ProductItem(props: any): any {
             width={10000}
             height={10000}
             alt={props.item.imgALT}
+            unoptimized
           />
         </div>
         <div className={styleProduct.detailBorder}>

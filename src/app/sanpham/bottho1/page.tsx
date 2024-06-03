@@ -56,6 +56,10 @@ export default function SanPham() {
                     height={100000}
                     alt="picture"
                     quality={100}
+<<<<<<< HEAD
+=======
+                    unoptimized
+>>>>>>> a1774de11f23c09cf67fe692eec7282f6ba6c2ce
                   />
                 </div>
               </div>

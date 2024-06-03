@@ -46,12 +46,21 @@ export default function SanPham() {
               <div className={styleDetailProduct.MainLeft}>
                 {/* Ảnh sản phẩm */}
                 <div className={styleDetailProduct.productImg}>
+<<<<<<< HEAD
                   <Image
+=======
+                  <img
+>>>>>>> a1774de11f23c09cf67fe692eec7282f6ba6c2ce
                     src="/img/botcaolanhsmvang.png"
                     width={100000}
                     height={100000}
                     alt="picture"
+<<<<<<< HEAD
                     quality={100}
+=======
+                    // quality={100}
+                    // unoptimized
+>>>>>>> a1774de11f23c09cf67fe692eec7282f6ba6c2ce
                   />
                 </div>
               </div>
